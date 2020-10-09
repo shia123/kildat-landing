@@ -2215,13 +2215,15 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 .btn-primary {
+  border-radius: 20px;
   color:black;
-  background-color:#efce3d;
+  background-color:white;
   border-color: #efce3d;
+
 }
 .btn-primary:hover {
   color:black;
-  background-color:white;
+  background-color:#fff48f;
   border-color: #efce3d;
 }
 .btn-primary:focus,
@@ -9322,3 +9324,5 @@ a.link-on-bg:hover {
   display: flex;
   flex-direction: row;
 }
+
+
