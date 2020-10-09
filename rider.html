@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Online market on the Go" />
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="./assets/images/kidlatw.png" sizes="16x16 32x32" type="image/png">
 
     <!-- Google Font -->
     <link
@@ -30,21 +30,19 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header"  style="background-color: #efce3d;background-image: linear-gradient(to right,#fddb3a,#fff48f);">
       <div class="branding">
-        <div class="container position-relative">
-          <nav class="navbar navbar-expand-lg">
-            <h1 class="site-logo">
-              <a class="navbar-brand" href="../../index.html"
-                ><img
-                  class="logo-icon"
-                  src="assets/images/icon.svg"
-                  alt="logo"
-                />
-                <span class="logo-text">Kidlat Delivery</span></a
-              >
-            </h1>
-          </nav>
+        <div class="container position-relative" style="padding-left: 3in;">
+         
+				<nav class="navbar navbar-expand-lg">
+					<h1 class="site-logo"><a class="navbar-brand" href="kidlat.html"><img class="logo-icon"
+								src="assets/images/k.png" alt="logo"
+								style="height: 15%;width: 15%;padding-top: 30px;"><img class="logo-icon"
+								src="assets/images/cities/kidlatword.png" alt="logo"
+								style="height: 50%;width: 50%;padding-top: 30px;padding-left: 40px;"></a></h1>
+					
+					
+				</nav>
 
           <ul class="social-list list-inline mb-0 position-absolute">
             <li class="list-inline-item">
@@ -75,16 +73,16 @@
     <div class="page-header">
       <div class="container">
         <div class="row row justify-content-end">
-          <div class="col-md-6">
+          <div class="col-md-6" style="padding: 30px;">
             <img
-              src="assets/images/rider.jpg"
+              src="assets/images/bkidlat.png"
               style="width: inherit"
               alt="rider"
             />
           </div>
           <div class="col-md-6">
             <div id="signup-alert"></div>
-            <h2 class="page-title pt-2 mb-3 font-weight-bold">Sign up now!</h2>
+            <h2 class="page-title pt-2 mb-3 font-weight-bold">Sign up now as a Kidlat Driver!</h2>
             <form name="sign-up-form" class="row">
               <div class="col-sm-6 form-group">
                 <input
@@ -101,13 +99,11 @@
                 />
               </div>
               <div class="col-sm-12 form-group">
-                <select name="license" class="form-control">
-                  <option value="">
-                    Does your Driver's License have Restriction 1 authorization?
-                  </option>
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
-                </select>
+                <input
+                name="address"
+                class="form-control"
+                placeholder="Address"
+              />
               </div>
               <div class="col-sm-12 form-group">
                 <input
@@ -125,30 +121,38 @@
                 />
               </div>
               <div class="col-sm-12 form-group">
-                <select name="bikeOwner" class="form-control">
-                  <option value="">Do you own a bike?</option>
-                  <option value="Yes">Yes</option>
-                  <option value="Borrower">Borrower</option>
-                  <option value="2nd Owner">2nd Owner</option>
-                  <option value="No">No</option>
-                </select>
+                <label >Upload Professional Driver's License</label>
+                <input
+                  name="license"
+                  type="file"
+                />
+                
               </div>
               <div class="col-sm-12 form-group">
-                <select name="source" class="form-control">
-                  <option value="">Do you hear about Us?</option>
-                  <option value="Facebook">Facebook</option>
-                  <option value="Outdoor">Outdoor</option>
-                  <option value="TV">TV</option>
-                  <option value="Radio">Radio</option>
-                  <option value="Newspaper / Print">Newspaper / Print</option>
-                  <option value="Family & Friends">Family & Friends</option>
-                  <option value="Internet Ad & Search">
-                    Internet Ad & Search
-                  </option>
-                </select>
+               
+                <label >Upload NBI Clearance Image</label>
+                <input
+                  name="clearance"
+                  type="file"
+                />
               </div>
+              <div class="col-sm-12 form-group">
+               
+                <label >Upload Motorcycle OR/CR</label>
+                <input
+                  name="orcr"
+                  type="file"
+                />
+              </div>
+            
+              
+
+  
+              <div class="col-sm-12 form-group">
+                <input type="checkbox" name="agree" required>
+               <label>I agree to the Privacy Policy,Terms and Conditions of Kidlat Delivery </label>
               <div class="col-sm-12 form-group text-right">
-                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
               </div>
             </form>
           </div>
@@ -158,100 +162,94 @@
     </div>
 
     <footer class="footer theme-bg-primary">
-      <div class="container py-5 mb-3">
+      <div class="container py-5 mb-3 foot-c">
         <div class="row">
-          <div class="footer-col col-6 col-lg-4">
+          <div class="footer-col ">
             <h4 class="col-heading">About Kidlat Delivery</h4>
             <ul class="list-unstyled">
-              <li><a href="#">Our Story</a></li>
-              <li><a href="#">Contact</a></li>
+              <div class="mb-4">
+                
+                Company Profile <br>	                            	
+                128 Kidlat Logistics Services<br>
+                 Co. is founded 2020
+                
+              </div>
+  
+          
             </ul>
           </div>
           <!--//footer-col-->
-          <div class="footer-col col-6 col-lg-4">
+          
+          <div class="footer-col">
             <h4 class="col-heading">Legal</h4>
             <ul class="list-unstyled">
-              <li><a href="privacy-policy.html">Privacy</a></li>
-              <li><a href="terms-and-conditions.html">Terms of Services</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
             </ul>
           </div>
-          <!--//footer-col-->
-          <div class="footer-col col-6 col-lg-4">
+          <div class="footer-col">
             <h4 class="col-heading">Stay Connected</h4>
             <ul class="social-list list-unstyled mb-0">
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-instagram fa-fw"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-twitter fa-fw"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.facebook.com/Go-Market-PH-101736321564059"
-                  ><i class="fab fa-facebook-f fa-fw"></i
-                ></a>
-              </li>
+              <li class="list-inline-item"><a href="http://instagram.com/kidlat_delivery"><i
+                    class="fab fa-instagram fa-fw"></i></a></li>
+              <li class="list-inline-item"><a href="http://twitter.com/@Kidlatdelivery"><i
+                    class="fab fa-twitter fa-fw"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.facebook.com/kidlatdelivery"><i
+                    class="fab fa-facebook-f fa-fw"></i></a></li>
+  
             </ul>
             <!--//social-list-->
-
-            <div class="mb-2">
-              Kidlat Delivery<br />
-              #9 Sta. Monica St. <br />
-              Kapitolyo, Pasig PH 1603
-            </div>
+  
+            
+  
+          
             <div>
-              <a href="mailto:hello@kidlat.com.ph">hello@kidlat.com.ph</a>
+            
+            </div>
+  
+          </div>
+  
+          <div class="footer-col">
+            <h4 class="col-heading">Contact Us</h4>
+            <div class="mb-4">
+              Smart: 0968-212-6219 <br>
+              Globe: 0905-928-9268
+            </div>
+            <a href="mailto:kidlatmarketing@gmail.com">kidlatmarketing@gmail.com</a>
+          
+  
+          </div>
+          <div class="footer-col">
+            <h4 class="col-heading">Address</h4>
+            <div class="mb-2">
+              Kidlat Delivery<br>
+              Unit 2L 2nd Floor RCH Bldg.<br>
+              Mc Arthur Highway corner <br>
+              Magalang St. Brgy. Ibayo, <br>
+              Marilao, Bulacan, Philippines
+    
             </div>
           </div>
+          
+          
+          <!--//footer-col-->
+          
           <!--//footer-col-->
         </div>
         <!--//row-->
       </div>
       <!--//container-->
       <div class="container">
-        <hr />
+        <hr>
       </div>
-      <div class="download-area py-4">
-        <div class="container text-center">
-          <h3 class="mb-3">Get the app</h3>
-          <div class="section-intro mb-4 single-col-max-width mx-auto">
-            Download our apps now. lorem ipsum dolor sit amet, consectetuer
-            adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-            sociis natoque penatibus et magnis dis.
-          </div>
-          <ul
-            class="app-stores list-unstyled list-inline mx-auto d-inline-block"
-          >
-            <li class="list-inline-item mr-3">
-              <a href="../nova-free.html#"
-                ><img
-                  class="ios"
-                  src="assets/images/appstore-apple.svg"
-                  alt="app-store"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="../nova-free.html#"
-                ><img
-                  class="android"
-                  src="assets/images/appstore-android.svg"
-                  alt="google play"
-              /></a>
-            </li>
-          </ul>
-        </div>
-        <!--//container-->
-      </div>
+      
       <!--//download-area-->
       <div class="footer-bottom text-center pb-5">
-        <small class="copyright"
-          >Created with <i class="fas fa-heart" style="color: #fb866a"></i> by
-          <a href="http://www.kamote.me" target="_blank"
-            >Kamote Solutions Inc.</a
-          ></small
-        >
+        <small class="copyright">Copyright © Kidlat 2020. All Rights Reserved.</small>
       </div>
+  
     </footer>
-
+  
     <!-- Javascript -->
     <script
       type="text/javascript"
@@ -276,6 +274,10 @@
             lastname: "required",
             license: "required",
             phone: "required",
+            address: "required",
+            clearance: "required",
+            orcr: "required",
+            agree: "required",
             email: {
               required: true,
               email: true,
@@ -285,13 +287,13 @@
           },
           // Specify validation error messages
           messages: {
-            firstname: "Please enter your firstname",
-            lastname: "Please enter your lastname",
+            firstname: "This field is required",
+            lastname: "This field is required",
+            lastname: "This field is required",
+            agree: "Please Check this field for Terms and Policies ",
             license: "This field is required.",
             phone: "This field is required.",
             email: "Please enter a valid email address",
-            bikeOwner: "This field is required.",
-            source: "This field is required.",
           },
           submitHandler: function (form) {
             //ajax fires here!
