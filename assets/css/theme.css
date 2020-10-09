@@ -9090,8 +9090,8 @@ a.link-on-bg:hover {
 }
 .hero-section .figure-holder {
   background: url("../images/kidlatphone.png") no-repeat right top;
-  background-size: 400px auto;
-  min-height: 250px;
+  background-size: 550px auto;
+  min-height: 400px;
 }
 .hero-section .app-stores img {
   height: 45px;
@@ -9344,6 +9344,6 @@ a.link-on-bg:hover {
   transform: translate(-50%, -50%);
 }
 .foot-c .footer-col{
- padding: 40px;
+ padding: 20px;
 }
 
