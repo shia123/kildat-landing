@@ -9076,8 +9076,8 @@ a.link-on-bg:hover {
 }
 .hero-section .figure-holder {
   background: url("../images/kidlatphone.png") no-repeat right top;
-  background-size: 550px auto;
-  min-height: 400px;
+  background-size: 600px auto;
+  min-height: 450px;
 }
 .hero-section .app-stores img {
   height: 45px;
@@ -9128,6 +9128,7 @@ a.link-on-bg:hover {
   transform: rotate(-12deg);
   width: 180%;
   background: #efce3d;
+  background-image: linear-gradient(#fddb3a,#fff48f);
 }
 .features-section .section-heading {
   z-index: 10;
