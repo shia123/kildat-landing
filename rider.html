@@ -87,14 +87,14 @@
               <div class="col-sm-6 form-group">
                 <input
                   name="firstname"
-                  class="form-control"
+                  class="form-control fname"
                   placeholder="First Name"
                 />
               </div>
               <div class="col-sm-6 form-group">
                 <input
                   name="lastname"
-                  class="form-control"
+                  class="form-control lname"
                   placeholder="Last Name"
                 />
               </div>
@@ -108,8 +108,10 @@
               <div class="col-sm-12 form-group">
                 <input
                   name="phone"
-                  class="form-control"
+                  type="text"
+                  class="form-control p-number"
                   placeholder="Phone Number"
+                  maxlength="11"
                 />
               </div>
               <div class="col-sm-12 form-group">
@@ -215,7 +217,7 @@
               Smart: 0968-212-6219 <br>
               Globe: 0905-928-9268
             </div>
-            <a href="mailto:kidlatmarketing@gmail.com">kidlatmarketing@gmail.com</a>
+            <a href="mailto:support@kidlat.com.ph">support@kidlat.com.ph</a>
           
   
           </div>
@@ -267,7 +269,21 @@
     ></script>
     <script type="text/javascript">
       $(function () {
+     
         // let validator = $("form[name='sign-up-form']").validate();
+        $(".p-number").on("keyup", function(e) {
+        e.target.value = e.target.value.replace(/[^\d]/, "");
+      
+
+      })
+      $(".fname").on("keyup", function(e) {
+        e.target.value = e.target.value.replace(/[0-9]/, "");
+      
+      })
+      $(".lname").on("keyup", function(e) {
+        e.target.value = e.target.value.replace(/[0-9]/, "");
+      
+      })
         $("form[name='sign-up-form']").validate({
           rules: {
             firstname: "required",

@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     var arr = "show"
     var arr2 = "show"
