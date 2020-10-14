@@ -9383,6 +9383,13 @@
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
   }
+  .category{
+    display: inline;
+  }
+  .category label{
+    padding: 40px;
+    margin-left: 6.5in;
+  }
 
   
   .modal-dialog {
@@ -9402,4 +9409,26 @@
       a.disabled {
         pointer-events: none;
         cursor: default;
+      }
+
+      .btn-unclick {
+        border-radius: 20px;
+        color:black;
+        background-color:white;
+        border-color: #efce3d;
+    
+      }
+      .btn-clicked-regis {
+        border-radius: 20px;
+        color:black;
+        background-color:#efce3d;
+        border-color: #efce3d;
+    
+      }
+      .btn-clicked-unregis {
+        border-radius: 20px;
+        color:black;
+        background-color:#efce3d;
+        border-color: #efce3d;
+    
       }
