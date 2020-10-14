@@ -1,0 +1,358 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <title>Kidlat Delivery |Sign Up</title>
+
+        <!-- Meta -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Online market on the Go" />
+        <link rel="shortcut icon" href="./assets/images/kidlatw.png" sizes="16x16 32x32" type="image/png">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Nunito:400,600,700" rel="stylesheet" />
+
+        <!-- FontAwesome JS-->
+        <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+        <!-- Plugins CSS -->
+        <link rel="stylesheet" href="assets/plugins/jquery-flipster/dist/jquery.flipster.min.css" />
+
+        <!-- Theme CSS -->
+        <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
+    </head>
+
+    <body>
+        <header class="header"
+            style="background-color: #efce3d;background-image: linear-gradient(to right,#fddb3a,#fff48f);">
+            <div class="branding">
+                <div class="container position-relative" style="padding-left: 3in;">
+
+                    <nav class="navbar navbar-expand-lg">
+                        <h1 class="site-logo"><a class="navbar-brand" href="kidlat.html"><img class="logo-icon"
+                                    src="assets/images/k.png" alt="logo"
+                                    style="height: 15%;width: 15%;padding-top: 30px;"><img class="logo-icon"
+                                    src="assets/images/cities/kidlatword.png" alt="logo"
+                                    style="height: 50%;width: 50%;padding-top: 30px;padding-left: 40px;"></a></h1>
+
+
+                    </nav>
+
+                    <ul class="social-list list-inline mb-0 position-absolute">
+                        <li class="list-inline-item">
+                            <a class="text-dark" href="#"><i class="fab fa-twitter fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-dark" href="https://www.facebook.com/Go-Market-PH-101736321564059"><i
+                                    class="fab fa-facebook-f fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-dark" href="#"><i class="fab fa-instagram fa-fw"></i></a>
+                        </li>
+                    </ul>
+                    <!--//social-list-->
+                </div>
+                <!--//container-->
+            </div>
+            <!--//branding-->
+        </header>
+        <!--//header-->
+        <div class="page-header">
+            <div class="col-6 category" style="display: flex;padding: 40px;padding-left: 9in;">
+                <label style="font-size: 1.5rem;padding-right: 50px;align-content: center;">Choose Category</label>
+                <button class="btn btn-primary registered">Registered Businesss</button>
+                <button class="btn btn-primary unregistered" style="margin-left: 40px;">Unregistered Businesss</button>
+            </div>
+
+            <div class="container">
+                <div class="row row justify-content-end">
+                    <div class="col-md-6" style="padding: 30px;">
+                        <img src="assets/images/merchant.png" style="width: 60vh;height: 60vh;" alt="rider" />
+
+                    </div>
+                    
+                    <div class="col-md-6 unregis-form">
+
+                        <div id="signup-alert"></div>
+                        <h2 class="page-title pt-2 mb-3 font-weight-bold">Sign up now as a Unregistered Merchant!</h2>
+                        <form name="sign-up-form" class="row">
+                            <div class="col-sm-6 form-group">
+                                <input name="firstname" class="form-control fname" placeholder="First Name" />
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input name="lastname" class="form-control lname" placeholder="Last Name" />
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <input name="address" class="form-control" placeholder="Address" />
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <input name="phone" type="text" class="form-control p-number" placeholder="Phone Number"
+                                    maxlength="11" />
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <input name="email" type="email" class="form-control" placeholder="Email Address" />
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label>Upload Professional Driver's License</label>
+                                <input name="license" type="file" />
+
+                            </div>
+                            <div class="col-sm-12 form-group">
+
+                                <label>Upload NBI Clearance Image</label>
+                                <input name="clearance" type="file" />
+                            </div>
+                            <div class="col-sm-12 form-group">
+
+                                <label>Upload Motorcycle OR/CR</label>
+                                <input name="orcr" type="file" />
+                            </div>
+
+
+
+
+                            <div class="col-sm-12 form-group">
+                                <input type="checkbox" name="agree" required>
+                                <label>I agree to the Privacy Policy,Terms and Conditions of Kidlat Delivery </label>
+                                <div class="col-sm-12 form-group text-right">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    
+                                </div>
+                        </form>
+                    </div>
+                </div> 
+                    <div class="col-md-6 regis-form">
+
+                        <div id="signup-alert"></div>
+                        <h2 class="page-title pt-2 mb-3 font-weight-bold">Sign up now as a Registered Merchant!</h2>
+                        <form name="sign-up-form" class="row">
+                            <div class="col-sm-6 form-group">
+                                <input name="firstname" class="form-control fname" placeholder="First Name" />
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input name="lastname" class="form-control lname" placeholder="Last Name" />
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <input name="address" class="form-control" placeholder="Address" />
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <input name="phone" type="text" class="form-control p-number" placeholder="Phone Number"
+                                    maxlength="11" />
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <input name="email" type="email" class="form-control" placeholder="Email Address" />
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label>Upload High Quality Brand Logo</label>
+                                <input name="b-logo" type="file" />
+
+                            </div>
+                            <div class="col-sm-12 form-group">
+
+                                <label>Upload High Quality Menu Item Photos</label>
+                                <input name="items" type="file" multiple/>
+                            </div>
+                            <div class="col-sm-12 form-group">
+
+                                <label>Upload BIR 2303/ Business Permit</label>
+                                <input name="bir" type="file" />
+                            </div>
+                            <div class="col-sm-12 form-group">
+
+                                <label>Upload (1) Valid ID owner / signatory (photo of front and back) with address and date of
+                                    birth</label>
+                                <input name="owner-address" type="file" />
+                            </div>
+                            <div class="col-sm-12 form-group">
+
+                                <label>Upload Store Front Photo</label>
+                                <input name="store-front" type="file" />
+                            </div>
+
+
+
+                            <div class="col-sm-12 form-group">
+                                <input type="checkbox" name="agree" required>
+                                <label>I agree to the Privacy Policy,Terms and Conditions of Kidlat Delivery </label>
+                                <div class="col-sm-12 form-group text-right">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--//container-->
+        </div>
+
+        <footer class="footer theme-bg-primary">
+            <div class="container py-5 mb-3 foot-c">
+                <div class="row">
+                    <div class="footer-col ">
+                        <h4 class="col-heading">About Kidlat Delivery</h4>
+                        <ul class="list-unstyled">
+                            <div class="mb-4">
+
+                                Company Profile <br>
+                                128 Kidlat Logistics Services<br>
+                                Co. is founded 2020
+
+                            </div>
+
+
+                        </ul>
+                    </div>
+                    <!--//footer-col-->
+
+                    <div class="footer-col">
+                        <h4 class="col-heading">Legal</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="col-heading">Stay Connected</h4>
+                        <ul class="social-list list-unstyled mb-0">
+                            <li class="list-inline-item"><a href="http://instagram.com/kidlat_delivery"><i
+                                        class="fab fa-instagram fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="http://twitter.com/@Kidlatdelivery"><i
+                                        class="fab fa-twitter fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/kidlatdelivery"><i
+                                        class="fab fa-facebook-f fa-fw"></i></a></li>
+
+                        </ul>
+                        <!--//social-list-->
+
+
+
+
+                        <div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="footer-col">
+                        <h4 class="col-heading">Contact Us</h4>
+                        <div class="mb-4">
+                            Smart: 0968-212-6219 <br>
+                            Globe: 0905-928-9268
+                        </div>
+                        <a href="mailto:support@kidlat.com.ph">support@kidlat.com.ph</a>
+
+
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="col-heading">Address</h4>
+                        <div class="mb-2">
+                            Kidlat Delivery<br>
+                            Unit 2L 2nd Floor RCH Bldg.<br>
+                            Mc Arthur Highway corner <br>
+                            Magalang St. Brgy. Ibayo, <br>
+                            Marilao, Bulacan, Philippines
+
+                        </div>
+                    </div>
+
+
+                    <!--//footer-col-->
+
+                    <!--//footer-col-->
+                </div>
+                <!--//row-->
+            </div>
+            <!--//container-->
+            <div class="container">
+                <hr>
+            </div>
+
+            <!--//download-area-->
+            <div class="footer-bottom text-center pb-5">
+                <small class="copyright">Copyright &copy; Kidlat 2020. All Rights Reserved.</small>
+            </div>
+
+        </footer>
+
+        <!-- Javascript -->
+        <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Page Specific JS -->
+        <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+    
+                $(".unregis-form").hide()
+                $(".registered").click(function () {
+                    $(".regis-form").show()
+                    $(".option-btn").hide()
+                    $(".unregis-form").hide()
+                })
+                $(".unregistered").click(function () {
+                    $(".unregis-form").show()
+                    $(".option-btn").hide()
+                    $(".regis-form").hide()
+                   
+                })
+
+                // let validator = $("form[name='sign-up-form']").validate();
+                $(".p-number").on("keyup", function (e) {
+                    e.target.value = e.target.value.replace(/[^\d]/, "");
+
+
+                })
+                $(".fname").on("keyup", function (e) {
+                    e.target.value = e.target.value.replace(/[0-9]/, "");
+
+                })
+                $(".lname").on("keyup", function (e) {
+                    e.target.value = e.target.value.replace(/[0-9]/, "");
+
+                })
+                $("form[name='sign-up-form']").validate({
+                    rules: {
+                        firstname: "required",
+                        lastname: "required",
+                        license: "required",
+                        phone: "required",
+                        address: "required",
+                        clearance: "required",
+                        orcr: "required",
+                        agree: "required",
+                        email: {
+                            required: true,
+                            email: true,
+                        },
+                        bikeOwner: "required",
+                        source: "required",
+                    },
+                    // Specify validation error messages
+                    messages: {
+                        firstname: "This field is required",
+                        lastname: "This field is required",
+                        lastname: "This field is required",
+                        agree: "Please Check this field for Terms and Policies ",
+                        license: "This field is required.",
+                        phone: "This field is required.",
+                        email: "Please enter a valid email address",
+                    },
+                    submitHandler: function (form) {
+                        //ajax fires here!
+                        //Append this after ajax submit success
+                        $("#signup-alert").append(
+                            "<div class='alert alert-success alert-dismissible'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a><strong>Success!</strong> Registration successful</div>"
+                        );
+                        // invoke this function if after successfully submitted the form
+                        $("form[name='sign-up-form']").each(function () {
+                            this.reset();
+                        });
+                    },
+                });
+            });
+        </script>
+    </body>
+
+    </html>
