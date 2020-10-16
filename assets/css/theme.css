@@ -2221,6 +2221,13 @@
     border-color: #efce3d;
 
   }
+  .btn-merchant {
+    border-radius: 20px;
+    color:black;
+    background-color:white;
+    border-color: #efce3d;
+
+  }
   .btn-ghost{
     border-radius: 20px;
     color:black;
