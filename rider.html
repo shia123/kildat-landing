@@ -66,7 +66,7 @@
         <div class="col-md-6">
           <div id="signup-alert"></div>
           <h2 class="page-title pt-2 mb-3 font-weight-bold">Sign up now as a Kidlat Driver!</h2>
-          <form name="sign-up-form" id="form-sign" class="row" action="http://192.168.254.105:4000/rider/register" method="POST"
+          <form name="sign-up-form" id="form-sign" class="row"  method="POST"
             enctype="multipart/form-data">
             <div class="col-sm-6 form-group">
               <input name="firstname" class="form-control fname" placeholder="First Name" />
@@ -176,7 +176,6 @@
         <div class="footer-col">
           <h4 class="col-heading">Address</h4>
           <div class="mb-2">
-            Kidlat Delivery<br>
             Unit 2L 2nd Floor RCH Bldg.<br>
             Mc Arthur Highway corner <br>
             Magalang St. Brgy. Ibayo, <br>
@@ -237,8 +236,6 @@
             license: "required",
             phone: "required",
             address: "required",
-            clearance: "required",
-            orcr: "required",
             agree: "required",
             email: {
               required: true,
@@ -259,27 +256,27 @@
           },
           submitHandler: function (form) {
               //ajax fires here!
-            var fd = new FormData(form)
+            var fd = $(form)[0]
             fd.append("firstname", form.firstname.value)
             fd.append("lastname", form.lastname.value)
             fd.append("address", form.address.value)
             fd.append("email", form.email.value)
             fd.append("phone", form.phone.value)
-            fd.append("orcr", form.orcr.files[0])
-            fd.append("clearance", form.clearance.files[0])
-            fd.append("license", form.license.files[0])
+            // fd.append("orcr", form.orcr.files[0])
+            // fd.append("clearance", form.clearance.files[0])
+            fd.append("file", form.license.files[0])
             fd.append("agree", form.agree.value)
 
+           
 
-
-            $.ajax({
-              url: 'http://192.168.254.105:4000/rider/register',
-              data: fd,
-              type: 'POST',
-              success: function (data) {
-                alert(data);
-              }
-            })
+            // $.ajax({
+            //   url: 'http://192.168.254.105:4000/rider/files/upload-single',
+            //   data: fd,
+            //   type: 'POST',
+            //   success: function (data) {
+            //     alert(data);
+            //   }
+            // })
 
 
 
@@ -290,7 +287,7 @@
 
 
             $("#signup-alert").append(
-                "<div class='alert alert-success alert-dismissible'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a><strong>Success!</strong> Registration successful</div>"
+                "<div class='alert alert-success alert-dismissible'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>Registration successful!</div>"
               );
               // invoke this function if after successfully submitted the form
               $("form[name='sign-up-form']").each(function () {
