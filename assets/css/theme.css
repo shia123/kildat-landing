@@ -9822,10 +9822,7 @@
       }
 
 
-      @media only screen 
-      and (min-device-width: 480px) 
-      and (max-device-width: 620px)
-      and (-webkit-min-device-pixel-ratio: 1) {
+      @media (max-width: 480px)  {
 
         .how-to-phone{
           width: 50%;
