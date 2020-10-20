@@ -10068,3 +10068,90 @@
       
     } 
 
+
+    @media only screen 
+    and (min-device-width: 360px) 
+    and (max-device-width: 640px)  {
+
+     .how-to-phone{
+       width: 50%;
+     }
+     .prev-how, .next-how {
+       cursor: pointer;
+       position: absolute;
+       top: 55%;
+       width: auto;
+       padding: 10px;
+       margin-top: -22px;
+       color: white;
+       font-weight: bold;
+       font-size: 18px;
+       transition: 0.6s ease;
+       border-radius: 0 3px 3px 0;
+       user-select: none;
+     }
+    
+     .site-headline {
+       font-size: 1.5rem;
+       padding: 20px;
+     }
+     .faster-headline{
+       font-size: 1rem;
+       color: black;
+       font-weight: bold;
+       padding-top: 20px;
+     }
+ 
+     .site-tagline {
+       font-size: 0.5rem;
+       color: black;
+       font-weight: 500;
+       padding-top: 30px;
+     }
+     
+     .logo-section-container{
+       padding-top: 50px;
+       padding-left: 30px;
+     }
+     .logo-icon-k{
+       height: 20%;
+       width: 20%;
+       padding-top: 10px;
+     }
+     .logo-icon-kidlat{
+       height: 80%;
+       width: 50%;
+       padding-top: 10px;
+       padding-left: 20px;
+     }
+     .img-area-1{
+       height: 150px;
+       width:35vh;
+     }
+     .img-area-2{
+       padding-left: 15px;
+       height: 150px;
+       width:38vh;
+     }
+     .next-how {
+       margin-left: 250px;
+       border-radius: 3px 0 0 3px;
+     }
+     .prev-how {
+       margin-left: 73px;
+       border-radius: 3px 0 0 3px;
+     }
+     .item-services .item-inner{
+       display: inline;
+       flex-flow: nowrap;
+       flex-direction: row;
+       justify-items: center;
+     }
+     .item-inner img{
+       margin-left: 80px;
+     }
+    
+     
+   } 
+
+
