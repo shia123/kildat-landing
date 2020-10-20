@@ -9603,6 +9603,12 @@
       .how-to-phone{
         width: 70%;;
       }
+      .faster-headline{
+        font-size: 2rem;
+        color: black;
+        font-weight: bold;
+        padding-top: 20px;
+      }
       @media only screen 
       and (min-device-width: 320px) 
       and (max-device-width: 480px)
@@ -9791,13 +9797,13 @@
           padding-left: 20px;
         }
         .img-area-1{
-          height: 150px;
-          width:25vh;
+          height: 200px;
+          width:45vh;
         }
         .img-area-2{
           padding-left: 5px;
-          height: 150px;
-          width:25vh;
+          height: 200px;
+          width:45vh;
         }
         .next-how {
           margin-left: 370px;
@@ -9822,7 +9828,10 @@
       }
 
 
-      /* @media (max-width: 480px)  {
+       @media only screen 
+       and (min-device-width: 280px) 
+       and (max-device-width: 653px)
+       and (-webkit-min-device-pixel-ratio: 1)  {
 
         .how-to-phone{
           width: 50%;
@@ -9830,7 +9839,7 @@
         .prev-how, .next-how {
           cursor: pointer;
           position: absolute;
-          top: 62%;
+          top: 42%;
           width: auto;
           padding: 10px;
           margin-top: -22px;
@@ -9841,19 +9850,20 @@
           border-radius: 0 3px 3px 0;
           user-select: none;
         }
-        .row-content{
-          display: flex;
-          flex-flow: nowrap;
-          flex-direction: column;
-          
-        }
+       
         .site-headline {
-          font-size: 2.5rem;
+          font-size: 1.5rem;
           padding: 20px;
+        }
+        .faster-headline{
+          font-size: 1rem;
+          color: black;
+          font-weight: bold;
+          padding-top: 20px;
         }
     
         .site-tagline {
-          font-size: 1rem;
+          font-size: 0.5rem;
           color: black;
           font-weight: 500;
           padding-top: 30px;
@@ -9875,33 +9885,23 @@
           padding-left: 20px;
         }
         .img-area-1{
-          height: 200px;
-          width:45vh;
+          height: 100px;
+          width:25vh;
         }
         .img-area-2{
-          padding-left: 5px;
-          height: 200px;
-          width:45vh;
+          padding-left: 1px;
+          height: 100px;
+          width:25vh;
         }
         .next-how {
-          margin-left: 370px;
+          margin-left: 190px;
           border-radius: 3px 0 0 3px;
         }
         .prev-how {
-          margin-left: 130px;
+          margin-left: 52px;
           border-radius: 3px 0 0 3px;
         }
-        .item-services .item-inner{
-          display: flex;
-          flex-flow: nowrap;
-          flex-direction: row;
-        }
-        .item .item-inner h5{
-          padding: 30px;
-          padding-top: 30px;
-        }
-        .item div{
-          padding-top: 30px;
-        }
-      } */
+       
+        
+      } 
 
