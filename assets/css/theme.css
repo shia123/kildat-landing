@@ -9660,7 +9660,7 @@
       and (min-device-width: 768px) 
       and (max-device-width: 1024px)
       and (-webkit-min-device-pixel-ratio: 2) 
-      and (orientation: portrait) {
+      {
 
         .how-to-phone{
           width: 80%;
@@ -10080,7 +10080,7 @@
      .prev-how, .next-how {
        cursor: pointer;
        position: absolute;
-       top: 55%;
+       top: 50%;
        width: auto;
        padding: 10px;
        margin-top: -22px;
@@ -10130,16 +10130,15 @@
        width:35vh;
      }
      .img-area-2{
-       padding-left: 15px;
        height: 150px;
        width:38vh;
      }
      .next-how {
-       margin-left: 250px;
+       margin-left: 280px;
        border-radius: 3px 0 0 3px;
      }
      .prev-how {
-       margin-left: 73px;
+       margin-left: 94px;
        border-radius: 3px 0 0 3px;
      }
      .item-services .item-inner{
@@ -10149,7 +10148,7 @@
        justify-items: center;
      }
      .item-inner img{
-       margin-left: 80px;
+       margin-left: 110px;
      }
     
      
