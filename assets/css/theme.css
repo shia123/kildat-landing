@@ -9257,15 +9257,17 @@
       }
 
       .hero-section .app-stores img {
-        height: 45px;
+        height: 50px;
       }
+      
 
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         .hero-section .app-stores img.ios {
-          width: 135px;
+          width: 155px;
         }
         .hero-section .app-stores img.android {
-          width: 152.25px;
+         
+          width: 140px;
         }
       }
 
@@ -9717,6 +9719,92 @@
         }
         .prev-how {
           margin-left: 0px;
+          border-radius: 3px 0 0 3px;
+        }
+        .item-services .item-inner{
+          display: flex;
+          flex-flow: nowrap;
+          flex-direction: row;
+        }
+        .item .item-inner h5{
+          padding: 30px;
+          padding-top: 30px;
+        }
+        .item div{
+          padding-top: 30px;
+        }
+      }
+
+      @media only screen 
+      and (min-device-width: 540px) 
+      and (max-device-width: 720px)
+      and (-webkit-min-device-pixel-ratio: 1) {
+
+        .how-to-phone{
+          width: 50%;
+        }
+        .prev-how, .next-how {
+          cursor: pointer;
+          position: absolute;
+          top: 62%;
+          width: auto;
+          padding: 10px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        .row-content{
+          display: flex;
+          flex-flow: nowrap;
+          flex-direction: column;
+          
+        }
+        .site-headline {
+          font-size: 2.5rem;
+          padding: 20px;
+        }
+    
+        .site-tagline {
+          font-size: 1rem;
+          color: black;
+          font-weight: 500;
+          padding-top: 30px;
+        }
+        
+        .logo-section-container{
+          padding-top: 50px;
+          padding-left: 30px;
+        }
+        .logo-icon-k{
+          height: 20%;
+          width: 20%;
+          padding-top: 10px;
+        }
+        .logo-icon-kidlat{
+          height: 80%;
+          width: 50%;
+          padding-top: 10px;
+          padding-left: 20px;
+        }
+        .img-area-1{
+          height: 200px;
+          width:45vh;
+        }
+        .img-area-2{
+          padding-left: 5px;
+          height: 200px;
+          width:45vh;
+        }
+        .next-how {
+          margin-left: 370px;
+          border-radius: 3px 0 0 3px;
+        }
+        .prev-how {
+          margin-left: 130px;
           border-radius: 3px 0 0 3px;
         }
         .item-services .item-inner{
