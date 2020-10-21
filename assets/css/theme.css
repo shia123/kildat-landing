@@ -9619,14 +9619,14 @@
         padding-top: 20px;
       }
 
-      @media only screen and (min-device-width: 720px) and (max-device-width: 1024px) and (orientation: portrait) {
+      @media only screen and (max-device-width: 800px)  and (orientation: portrait) {
         .how-to-phone {
-          width: 80%;
+          width: 50%;
         }
         .prev-how, .next-how {
           cursor: pointer;
           position: absolute;
-          top: 40%;
+          top: 50%;
           width: auto;
           padding: 10px;
           margin-top: -22px;
@@ -9640,7 +9640,7 @@
         .row-content {
           display: flex;
           flex-flow: nowrap;
-          flex-direction: row;
+          flex-direction: column;
         }
         .site-headline {
           font-size: 2rem;
@@ -9676,7 +9676,7 @@
           width: 47vh;
         }
         .next-how {
-          margin-left: 250px;
+          margin-left: 310px;
           border-radius: 3px 0 0 3px;
         }
         .prev-how {
