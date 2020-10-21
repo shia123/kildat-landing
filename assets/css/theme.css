@@ -9619,14 +9619,14 @@
         padding-top: 20px;
       }
 
-      @media only screen and (min-device-width: 720px) and (orientation: portrait) {
+      @media only screen and (min-device-width: 720px) and (max-device-width: 1024px) and (orientation: portrait) {
         .how-to-phone {
           width: 80%;
         }
         .prev-how, .next-how {
           cursor: pointer;
           position: absolute;
-          top: 50%;
+          top: 40%;
           width: auto;
           padding: 10px;
           margin-top: -22px;
@@ -9697,7 +9697,7 @@
         }
       }
 
-      @media screen and (device-width: 360px) and (device-height: 640px) 
+      @media screen and (device-width: 375px) and (device-height: 667px) 
       and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
         .how-to-phone{
           width: 60%;
@@ -9760,7 +9760,7 @@
           width:38vh;
         }
         .next-how {
-          margin-left: 300px;
+          margin-left: 320px;
           border-radius: 3px 0 0 3px;
         }
         .prev-how {
