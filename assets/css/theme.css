@@ -9259,14 +9259,12 @@
       .hero-section .app-stores img {
         height: 50px;
       }
-      
 
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         .hero-section .app-stores img.ios {
           width: 155px;
         }
         .hero-section .app-stores img.android {
-         
           width: 140px;
         }
       }
@@ -9576,40 +9574,202 @@
         background-color: #efce3d;
         border-color: #efce3d;
       }
-      .logo-icon-k{
+
+      .logo-icon-k {
         height: 15%;
         width: 15%;
         padding-top: 30px;
       }
-      .logo-icon-kidlat{
-        height: 50%;width: 50%;padding-top: 30px;padding-left: 40px;
+
+      .logo-icon-kidlat {
+        height: 50%;
+        width: 50%;
+        padding-top: 30px;
+        padding-left: 40px;
       }
-      .logo-section-container{
+
+      .logo-section-container {
         padding-left: 3in;
       }
-      .item-inner{
+
+      .item-inner {
         text-align: center;
         padding: 30px;
       }
-      
-      .img-area-1{
+
+      .img-area-1 {
         height: 250px;
-        width:75vh;
+        width: 75vh;
       }
-      .img-area-2{
+
+      .img-area-2 {
         height: 250px;
-        width:75vh;
+        width: 75vh;
       }
-      .how-to-phone{
-        width: 70%;;
+
+      .how-to-phone {
+        width: 70%;
+        ;
       }
-      .faster-headline{
+
+      .faster-headline {
         font-size: 2rem;
         color: black;
         font-weight: bold;
         padding-top: 20px;
       }
-      @media only screen 
+
+      @media only screen and (min-device-width: 720px) and (orientation: portrait) {
+        .how-to-phone {
+          width: 80%;
+        }
+        .prev-how, .next-how {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 10px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        .row-content {
+          display: flex;
+          flex-flow: nowrap;
+          flex-direction: row;
+        }
+        .site-headline {
+          font-size: 2rem;
+        }
+        .site-tagline {
+          font-size: 1rem;
+          color: black;
+          font-weight: 500;
+          padding-top: 30px;
+        }
+        .logo-section-container {
+          padding-top: 50px;
+          padding-left: 30px;
+        }
+        .logo-icon-k {
+          height: 20%;
+          width: 20%;
+          padding-top: 10px;
+        }
+        .logo-icon-kidlat {
+          height: 80%;
+          width: 50%;
+          padding-top: 10px;
+          padding-left: 20px;
+        }
+        .img-area-1 {
+          height: 200px;
+          width: 45vh;
+        }
+        .img-area-2 {
+          padding-left: 15px;
+          height: 200px;
+          width: 47vh;
+        }
+        .next-how {
+          margin-left: 250px;
+          border-radius: 3px 0 0 3px;
+        }
+        .prev-how {
+          margin-left: 0px;
+          border-radius: 3px 0 0 3px;
+        }
+        .item-services .item-inner {
+          display: flex;
+          flex-flow: nowrap;
+          flex-direction: row;
+        }
+        .item .item-inner h5 {
+          padding: 30px;
+          padding-top: 30px;
+        }
+        .item div {
+          padding-top: 30px;
+        }
+      }
+
+      @media screen and (device-width: 360px) and (device-height: 640px) 
+      and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+        .how-to-phone{
+          width: 60%;
+        }
+        .prev-how, .next-how {
+          cursor: pointer;
+          position: absolute;
+          top: 55%;
+          width: auto;
+          padding: 10px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        .site-headline {
+          font-size: 2rem;
+          padding: 20px;
+        }
+        .faster-headline{
+          font-size: 1.5rem;
+          color: black;
+          font-weight: bold;
+          padding-top: 20px;
+        }
+    
+        .site-tagline {
+          font-size: 1rem;
+          color: black;
+          font-weight: 500;
+          padding-top: 30px;
+        }
+        
+        .logo-section-container{
+          padding-top: 50px;
+          padding-left: 30px;
+        }
+        .logo-icon-k{
+          height: 20%;
+          width: 20%;
+          padding-top: 10px;
+        }
+        .logo-icon-kidlat{
+          height: 80%;
+          width: 50%;
+          padding-top: 10px;
+          padding-left: 20px;
+        }
+        .img-area-1{
+          height: 150px;
+          width:35vh;
+        }
+        .img-area-2{
+          padding-left: 15px;
+          height: 150px;
+          width:38vh;
+        }
+        .next-how {
+          margin-left: 300px;
+          border-radius: 3px 0 0 3px;
+        }
+        .prev-how {
+          margin-left: 76px;
+          border-radius: 3px 0 0 3px;
+        }
+      }
+
+      /* @media only screen 
       and (min-device-width: 320px) 
       and (max-device-width: 480px)
       and (-webkit-min-device-pixel-ratio: 2) {
@@ -9911,74 +10071,74 @@
       and (max-device-width: 640px)
       and (-webkit-min-device-pixel-ratio: 1)  {
 
-       .how-to-phone{
-         width: 50%;
-       }
-       .prev-how, .next-how {
-         cursor: pointer;
-         position: absolute;
-         top: 50%;
-         width: auto;
-         padding: 10px;
-         margin-top: -22px;
-         color: white;
-         font-weight: bold;
-         font-size: 18px;
-         transition: 0.6s ease;
-         border-radius: 0 3px 3px 0;
-         user-select: none;
-       }
-      
-       .site-headline {
-         font-size: 1.5rem;
-         padding: 20px;
-       }
-       .faster-headline{
-         font-size: 1rem;
-         color: black;
-         font-weight: bold;
-         padding-top: 20px;
-       }
-   
-       .site-tagline {
-         font-size: 0.5rem;
-         color: black;
-         font-weight: 500;
-         padding-top: 30px;
-       }
-       
-       .logo-section-container{
-         padding-top: 50px;
-         padding-left: 30px;
-       }
-       .logo-icon-k{
-         height: 20%;
-         width: 20%;
-         padding-top: 10px;
-       }
-       .logo-icon-kidlat{
-         height: 80%;
-         width: 50%;
-         padding-top: 10px;
-         padding-left: 20px;
-       }
-       .img-area-1{
-         height: 150px;
-         width:35vh;
-       }
-       .img-area-2{
-         padding-left: 15px;
-         height: 150px;
-         width:38vh;
-       }
-       .next-how {
-         margin-left: 250px;
-         border-radius: 3px 0 0 3px;
-       }
-       .prev-how {
-         margin-left: 73px;
-         border-radius: 3px 0 0 3px;
-       }
+        .how-to-phone{
+          width: 50%;
+        }
+        .prev-how, .next-how {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 10px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        .site-headline {
+          font-size: 1.5rem;
+          padding: 20px;
+        }
+        .faster-headline{
+          font-size: 1rem;
+          color: black;
+          font-weight: bold;
+          padding-top: 20px;
+        }
+    
+        .site-tagline {
+          font-size: 0.5rem;
+          color: black;
+          font-weight: 500;
+          padding-top: 30px;
+        }
+        
+        .logo-section-container{
+          padding-top: 50px;
+          padding-left: 30px;
+        }
+        .logo-icon-k{
+          height: 20%;
+          width: 20%;
+          padding-top: 10px;
+        }
+        .logo-icon-kidlat{
+          height: 80%;
+          width: 50%;
+          padding-top: 10px;
+          padding-left: 20px;
+        }
+        .img-area-1{
+          height: 150px;
+          width:35vh;
+        }
+        .img-area-2{
+          padding-left: 15px;
+          height: 150px;
+          width:38vh;
+        }
+        .next-how {
+          margin-left: 250px;
+          border-radius: 3px 0 0 3px;
+        }
+        .prev-how {
+          margin-left: 73px;
+          border-radius: 3px 0 0 3px;
+        }
       
        
      } 
@@ -10067,9 +10227,9 @@
       }
      
       
-    } 
+    }  */
 
-/* 
+      /* 
     @media only screen 
     and (min-device-width: 360px) 
     and (max-device-width: 640px)  {
