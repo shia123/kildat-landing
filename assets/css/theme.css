@@ -9617,6 +9617,10 @@
           color: black;
           font-weight: bold;
           padding-top: 20px;
+          
+        }
+        .fq-body{
+          margin-top: 20px;
         }
 
         @media only screen and (max-device-width: 800px)  and (orientation: portrait) {
@@ -9702,6 +9706,20 @@
           .how-to-phone{
             width: 60%;
           }
+          .faq {
+            height: 80px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .ans {
+            height: 120px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+          
           .prev-how, .next-how {
             cursor: pointer;
             position: absolute;
@@ -9783,6 +9801,20 @@
           .how-to-phone{
             width: 60%;
           }
+          .faq {
+            height: 80px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .ans {
+            height: 120px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
           .prev-how, .next-how {
             cursor: pointer;
             position: absolute;
