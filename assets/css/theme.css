@@ -9609,7 +9609,7 @@
 
         .how-to-phone {
           width: 70%;
-          ;
+          
         }
 
         .faster-headline {
@@ -9622,7 +9622,51 @@
         .fq-body{
           margin-top: 20px;
         }
+        .cp-container{
+          display: flex;
+        }
+        .cp-container-2{
+          display: flex;
+          justify-content: space-around;
+        }
+        .cp-banner{
+         height: 200px;
+         width: 400px;
+        }
+        .cp-banner-2{
+          height: 300px;
+          width: 500px;
+         }
+         .kidlat-logo{
+          height: 100px;
+          width: 200px;
+         }
+        
+         .kidlat-categories{
+           display: flex;
+         }
+         .phone-banner{
+           height: 500px;
+           width: 400px;
+         }
+         .kidlat-images-categ .phone-banner{
+           padding-top: 40px;
+         }
+         .list-riders{
+           display: flex;
+         }
+         .boy-kidlat{
+           display: flex;
+           padding: 30px;
+         }
+         p{
+           color: black;
+         }
 
+         .b-kidlat-banner{
+          height: 300px;
+          width: 200px;
+        }
         @media only screen and (max-device-width: 800px)  and (orientation: portrait) {
           .how-to-phone {
             width: 50%;
