@@ -9630,7 +9630,6 @@
           justify-content: space-around;
         }
         .cp-banner{
-         height: 200px;
          width: 400px;
         }
         .cp-banner-2{
@@ -9641,19 +9640,27 @@
           height: 100px;
           width: 200px;
          }
+         .mission{
+           display: flex;
+           padding-top: 20px;
+         }
+         .vision{
+          display: flex;
+         
+        }
          .k-categ{
            display: flex;
          }
+         .k-categ h5{
+          padding-left: 5px;
+        }
          .k-categ p{
-           padding-left: 30px;
+           padding-left: 5px;
          }
          .kidlat-categories{
            display: flex;
          }
-         .phone-banner{
-           height: 500px;
-           width: 400px;
-         }
+         
          .kidlat-images-categ .cp-banner{
            padding-left: 20px;
          }
