@@ -9641,13 +9641,21 @@
           height: 100px;
           width: 200px;
          }
-        
+         .k-categ{
+           display: flex;
+         }
+         .k-categ p{
+           padding-left: 30px;
+         }
          .kidlat-categories{
            display: flex;
          }
          .phone-banner{
            height: 500px;
            width: 400px;
+         }
+         .kidlat-images-categ .cp-banner{
+           padding-left: 20px;
          }
          .kidlat-images-categ .phone-banner{
            padding-top: 40px;
