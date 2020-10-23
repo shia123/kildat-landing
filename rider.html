@@ -86,7 +86,8 @@
               <input name="address" class="form-control address" placeholder="Address" />
             </div>
             <div class="col-sm-12 form-group">
-              <input name="mobile" type="text" class="form-control p-number" placeholder="Phone Number" maxlength="11" />
+              <input name="mobile" type="text" class="form-control p-number" placeholder="Phone Number"
+                maxlength="11" />
             </div>
             <div class="col-sm-12 form-group">
               <input name="email" type="email" class="form-control email" placeholder="Email Address" />
@@ -218,222 +219,243 @@
   <!-- Page Specific JS -->
   <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
   <script type="text/javascript">
-    $(function () {
+    // $(function () {
 
-      // let validator = $("form[name='sign-up-form']").validate();
+    //   // let validator = $("form[name='sign-up-form']").validate();
 
-      var return_first;
-      function callbackFirst(response) {
-        return_first = response;
-        //use return_first variable here
-      }
-      var return_second;
-      function callbackSecond(response) {
-        return_second = response;
-        //use return_first variable here
-      }
-      var return_last;
-      function callbackLast(response) {
-        return_last = response;
-        //use return_first variable here
-      }
-      var serverFileFirst = (function (file) {
+    //   var return_first;
+    //   function callbackFirst(response) {
+    //     return_first = response;
+    //     //use return_first variable here
+    //   }
+    //   var return_second;
+    //   function callbackSecond(response) {
+    //     return_second = response;
+    //     //use return_first variable here
+    //   }
+    //   var return_last;
+    //   function callbackLast(response) {
+    //     return_last = response;
+    //     //use return_first variable here
+    //   }
+    //   var serverFileFirst = (function (file) {
 
-        var formData = new FormData();
-        formData.append('file', file);
+    //     var formData = new FormData();
+    //     formData.append('file', file);
 
-        console.log(formData.get('file'))
+    //     console.log(formData.get('file'))
 
-        // console.log(document.getElementById('.form-sign').get('file'))
-        // fetch('http://192.168.254.105:4000/rider/images/upload-single', {
-        //   method: 'POST',
-        //   body: formData
-        // }).then(response => response.json())
+    //     // console.log(document.getElementById('.form-sign').get('file'))
+    //     // fetch('http://192.168.254.105:4000/rider/images/upload-single', {
+    //     //   method: 'POST',
+    //     //   body: formData
+    //     // }).then(response => response.json())
 
-        $.ajax({
-          type: "POST",
-          url: "http://192.168.254.105:4000/rider/images/upload-single",
-          enctype: 'multipart/form-data',
-          data: formData,
-          processData: false,
-          contentType: false,
-          success: function (res) {
-            callbackFirst(res.data.image)
-            // fileimage = res.data.image
-            // console.log(fileimage)
-          }
-        })
-
-
-      });
-      var serverFileSecond = (function (file) {
-
-        var formData = new FormData();
-        formData.append('file', file);
-
-        console.log(formData.get('file'))
-
-        // console.log(document.getElementById('.form-sign').get('file'))
-        // fetch('http://192.168.254.105:4000/rider/images/upload-single', {
-        //   method: 'POST',
-        //   body: formData
-        // }).then(response => response.json())
-
-        $.ajax({
-          type: "POST",
-          url: "http://192.168.254.105:4000/rider/images/upload-single",
-          enctype: 'multipart/form-data',
-          data: formData,
-          processData: false,
-          contentType: false,
-          success: function (res) {
-            callbackSecond(res.data.image)
-            // fileimage = res.data.image
-            // console.log(fileimage)
-          }
-        })
+    //     $.ajax({
+    //       type: "POST",
+    //       url: "http://192.168.254.105:4000/rider/images/upload-single",
+    //       enctype: 'multipart/form-data',
+    //       data: formData,
+    //       processData: false,
+    //       contentType: false,
+    //       success: function (res) {
+    //         callbackFirst(res.data.image)
+    //         // fileimage = res.data.image
+    //         // console.log(fileimage)
+    //       }
+    //     })
 
 
-      });
-      var serverFileLast = (function (file) {
+    //   });
+    //   var serverFileSecond = (function (file) {
 
-        var formData = new FormData();
-        formData.append('file', file);
+    //     var formData = new FormData();
+    //     formData.append('file', file);
 
-        console.log(formData.get('file'))
+    //     console.log(formData.get('file'))
 
-        // console.log(document.getElementById('.form-sign').get('file'))
-        // fetch('http://192.168.254.105:4000/rider/images/upload-single', {
-        //   method: 'POST',
-        //   body: formData
-        // }).then(response => response.json())
+    //     // console.log(document.getElementById('.form-sign').get('file'))
+    //     // fetch('http://192.168.254.105:4000/rider/images/upload-single', {
+    //     //   method: 'POST',
+    //     //   body: formData
+    //     // }).then(response => response.json())
 
-        $.ajax({
-          type: "POST",
-          url: "http://192.168.254.105:4000/rider/images/upload-single",
-          enctype: 'multipart/form-data',
-          data: formData,
-          processData: false,
-          contentType: false,
-          success: function (res) {
-            callbackLast(res.data.image)
-            // fileimage = res.data.image
-            // console.log(fileimage)
-          }
-        })
-
-
-      });
-
-      $(".license").change(function () {
-        var file = this.files[0];
-        console.log(file)
-        serverFileFirst(file);
-      });
-      $(".clearance").change(function () {
-        var file = this.files[0];
-        console.log(file)
-        serverFileSecond(file);
-      });
-      $(".orcr").change(function () {
-        var file = this.files[0];
-        console.log(file)
-        serverFileLast(file);
-      });
-      $(".p-number").on("keyup", function (e) {
-        e.target.value = e.target.value.replace(/[^\d]/, "");
+    //     $.ajax({
+    //       type: "POST",
+    //       url: "http://192.168.254.105:4000/rider/images/upload-single",
+    //       enctype: 'multipart/form-data',
+    //       data: formData,
+    //       processData: false,
+    //       contentType: false,
+    //       success: function (res) {
+    //         callbackSecond(res.data.image)
+    //         // fileimage = res.data.image
+    //         // console.log(fileimage)
+    //       }
+    //     })
 
 
-      })
-      $(".fname").on("keyup", function (e) {
-        e.target.value = e.target.value.replace(/[0-9]/, "");
+    //   });
+    //   var serverFileLast = (function (file) {
 
-      })
-      $(".lname").on("keyup", function (e) {
-        e.target.value = e.target.value.replace(/[0-9]/, "");
+    //     var formData = new FormData();
+    //     formData.append('file', file);
 
-      })
+    //     console.log(formData.get('file'))
+
+    //     // console.log(document.getElementById('.form-sign').get('file'))
+    //     // fetch('http://192.168.254.105:4000/rider/images/upload-single', {
+    //     //   method: 'POST',
+    //     //   body: formData
+    //     // }).then(response => response.json())
+
+    //     $.ajax({
+    //       type: "POST",
+    //       url: "http://192.168.254.105:4000/rider/images/upload-single",
+    //       enctype: 'multipart/form-data',
+    //       data: formData,
+    //       processData: false,
+    //       contentType: false,
+    //       success: function (res) {
+    //         callbackLast(res.data.image)
+    //         // fileimage = res.data.image
+    //         // console.log(fileimage)
+    //       }
+    //     })
 
 
+    //   });
 
-      $("form[name='sign-up-form']").validate({
-        rules: {
-          firstname: "required",
-          lastname: "required",
-          license: "required",
-          mobile: "required",
-          address: "required",
-          agree: "required",
-          email: {
-            required: true,
-            email: true,
-          },
-          bikeOwner: "required",
-          source: "required",
-        },
-        // Specify validation error messages
-        messages: {
-          firstname: "This field is required",
-          lastname: "This field is required",
-          lastname: "This field is required",
-          agree: "Please Check this field for Terms and Policies ",
-          license: "This field is required.",
-          mobile: "This field is required.",
-          email: "Please enter a valid email address",
-        },
-        submitHandler: function (form) {
-          //ajax fires here!
+    //   $(".license").change(function () {
+    //     var file = this.files[0];
+    //     console.log(file)
+    //     serverFileFirst(file);
+    //   });
+    //   $(".clearance").change(function () {
+    //     var file = this.files[0];
+    //     console.log(file)
+    //     serverFileSecond(file);
+    //   });
+    //   $(".orcr").change(function () {
+    //     var file = this.files[0];
+    //     console.log(file)
+    //     serverFileLast(file);
+    //   });
+    //   $(".p-number").on("keyup", function (e) {
+    //     e.target.value = e.target.value.replace(/[^\d]/, "");
 
-          // https://kidlat.s3.amazonaws.com/images
-          // var fileInput = form.file.files[0];
-          // // var fd = new FormData($(form)[0]);
-          // // fd.append("firstname", form.firstname.value)
-          // // fd.append("lastname", form.lastname.value)
-          // // fd.append("address", form.address.value)
-          // // fd.append("email", form.email.value)
-          // // fd.append("phone", form.phone.value)
 
-          // // fd.append("file", fileInput)
-          // // fd.append("agree", form.agree.value)
+    //   })
+    //   $(".fname").on("keyup", function (e) {
+    //     e.target.value = e.target.value.replace(/[0-9]/, "");
 
-          // console.log(fd.get('file'))
+    //   })
+    //   $(".lname").on("keyup", function (e) {
+    //     e.target.value = e.target.value.replace(/[0-9]/, "");
 
-          console.log(return_first);
-          console.log(return_second);
-          console.log(return_last);
-          // $.ajax({
-          //   url: 'http://192.168.254.105:4000/rider/images/upload-single',
-          //   data: fd,
-          //   method: 'POST',
-          //   cache: false,
-          //   processData: false,
-          //   contentType:false,
-          //   success: function (data) {
-          //     console.log(data);
-          //   }
+    //   })
 
 
 
-          fetch('http://192.168.254.105:4000/rider/register', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-              user: {
-                firstName: form.firstname.value,
-                lastName: form.lastname.value,
-                email: form.email.value,
-                address: form.address.value,
-                license: return_first,
-                orcr: return_last,
-                nbi: return_second,
-                mobile: form.mobile.value,
-                agree: form.agree.value,
-                status:"pending",
-              },
-            })
-          })
+    //   $("form[name='sign-up-form']").validate({
+    //     rules: {
+    //       firstname: "required",
+    //       lastname: "required",
+    //       license: "required",
+    //       mobile: "required",
+    //       address: "required",
+    //       agree: "required",
+    //       email: {
+    //         required: true,
+    //         email: true,
+    //       },
+    //       bikeOwner: "required",
+    //       source: "required",
+    //     },
+    //     // Specify validation error messages
+    //     messages: {
+    //       firstname: "This field is required",
+    //       lastname: "This field is required",
+    //       lastname: "This field is required",
+    //       agree: "Please Check this field for Terms and Policies ",
+    //       license: "This field is required.",
+    //       mobile: "This field is required.",
+    //       email: "Please enter a valid email address",
+    //     },
+    //     submitHandler: function (form) {
+    //       //ajax fires here!
+
+    //       // https://kidlat.s3.amazonaws.com/images
+    //       // var fileInput = form.file.files[0];
+    //       // // var fd = new FormData($(form)[0]);
+    //       // // fd.append("firstname", form.firstname.value)
+    //       // // fd.append("lastname", form.lastname.value)
+    //       // // fd.append("address", form.address.value)
+    //       // // fd.append("email", form.email.value)
+    //       // // fd.append("phone", form.phone.value)
+
+    //       // // fd.append("file", fileInput)
+    //       // // fd.append("agree", form.agree.value)
+
+    //       // console.log(fd.get('file'))
+
+    //       console.log(return_first);
+    //       console.log(return_second);
+    //       console.log(return_last);
+    //       // $.ajax({
+    //       //   url: 'http://192.168.254.105:4000/rider/images/upload-single',
+    //       //   data: fd,
+    //       //   method: 'POST',
+    //       //   cache: false,
+    //       //   processData: false,
+    //       //   contentType:false,
+    //       //   success: function (data) {
+    //       //     console.log(data);
+    //       //   }
+
+
+
+    //       fetch('http://192.168.254.105:4000/rider/register', {
+    //         method: 'POST',
+    //         headers: {
+    //           'Content-Type': 'application/json'
+    //         },
+    //         body: JSON.stringify({
+    //           user: {
+    //             firstName: form.firstname.value,
+    //             lastName: form.lastname.value,
+    //             email: form.email.value,
+    //             address: form.address.value,
+    //             license: return_first,
+    //             orcr: return_last,
+    //             nbi: return_second,
+    //             mobile: form.mobile.value,
+    //             agree: form.agree.value,
+    //             status: "pending",
+    //           },
+    //         })
+    //       }).then((res) => {
+    //         if (res.ok) {
+    //           $("#signup-alert").append(
+    //             "<div class='alert alert-success alert-dismissible'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>Registration successful!</div>"
+    //           );
+             
+    //           $("form[name='sign-up-form']").each(function () {
+    //             this.reset();
+
+    //           });
+    //           return res.json();
+
+    //         } else if (res.status === 400) {
+    //           alert("Your Mobile Number or Email is already Taken");
+    //           return Promise.reject('error 400');
+
+    //         } else {
+    //           return Promise.reject('some other error: ' + res.status);
+
+    //         }
+    //       })
+    //         .catch(err => console.log(err));
 
 
 
@@ -441,18 +463,11 @@
 
 
 
-          $("#signup-alert").append(
-              "<div class='alert alert-success alert-dismissible'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>Registration successful!</div>"
-            );
-            // invoke this function if after successfully submitted the form
-            $("form[name='sign-up-form']").each(function () {
-              this.reset();
 
-            });
 
-          },
-      });
-    });
+    //     },
+    //   });
+    // });
   </script>
 </body>
 
