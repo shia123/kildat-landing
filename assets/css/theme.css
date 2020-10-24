@@ -9682,7 +9682,7 @@
           height: 300px;
           width: 200px;
         }
-        @media only screen and (max-device-width: 800px)  and (orientation: portrait) {
+        /* @media only screen and (max-device-width: 800px)  and (orientation: portrait) {
           .how-to-phone {
             width: 50%;
           }
@@ -10272,6 +10272,469 @@
         .item-inner img{
           margin-left: 120px;
         }
+      } */
+      /* new style responsive */
+      @media (min-width: 1281px) {
+  
+        .how-to-phone {
+          width: 50%;
+        }
+        .prev-how, .next-how {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 10px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        .row-content {
+          display: flex;
+          flex-flow: nowrap;
+          flex-direction: column;
+        }
+        .site-headline {
+          font-size: 2rem;
+        }
+        .site-tagline {
+          font-size: 1rem;
+          color: black;
+          font-weight: 500;
+          padding-top: 30px;
+        }
+        .logo-section-container {
+          padding-top: 50px;
+          padding-left: 30px;
+        }
+        .logo-icon-k {
+          height: 20%;
+          width: 20%;
+          padding-top: 10px;
+        }
+        .logo-icon-kidlat {
+          height: 80%;
+          width: 50%;
+          padding-top: 10px;
+          padding-left: 20px;
+        }
+        .img-area-1 {
+          height: 200px;
+          width: 45vh;
+        }
+        .img-area-2 {
+          padding-left: 15px;
+          height: 200px;
+          width: 47vh;
+        }
+        .next-how {
+          margin-left: 410px;
+          border-radius: 3px 0 0 3px;
+        }
+        .prev-how {
+          margin-left: 0px;
+          border-radius: 3px 0 0 3px;
+        }
+        .item-services .item-inner {
+          display: flex;
+          flex-flow: nowrap;
+          flex-direction: row;
+        }
+        .item .item-inner h5 {
+          padding: 30px;
+          padding-top: 30px;
+        }
+        .item div {
+          padding-top: 30px;
+        }
+        
+      }
+      
+      /* 
+        ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px
+      */
+      
+      @media (min-width: 1025px) and (max-width: 1280px) {
+        
+        .how-to-phone {
+          width: 50%;
+        }
+        .prev-how, .next-how {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 10px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        .row-content {
+          display: flex;
+          flex-flow: nowrap;
+          flex-direction: column;
+        }
+        .site-headline {
+          font-size: 2rem;
+        }
+        .site-tagline {
+          font-size: 1rem;
+          color: black;
+          font-weight: 500;
+          padding-top: 30px;
+        }
+        .logo-section-container {
+          padding-top: 50px;
+          padding-left: 30px;
+        }
+        .logo-icon-k {
+          height: 20%;
+          width: 20%;
+          padding-top: 10px;
+        }
+        .logo-icon-kidlat {
+          height: 80%;
+          width: 50%;
+          padding-top: 10px;
+          padding-left: 20px;
+        }
+        .img-area-1 {
+          height: 200px;
+          width: 45vh;
+        }
+        .img-area-2 {
+          padding-left: 15px;
+          height: 200px;
+          width: 47vh;
+        }
+        .next-how {
+          margin-left: 410px;
+          border-radius: 3px 0 0 3px;
+        }
+        .prev-how {
+          margin-left: 0px;
+          border-radius: 3px 0 0 3px;
+        }
+        .item-services .item-inner {
+          display: flex;
+          flex-flow: nowrap;
+          flex-direction: row;
+        }
+        .item .item-inner h5 {
+          padding: 30px;
+          padding-top: 30px;
+        }
+        .item div {
+          padding-top: 30px;
+        }
+        
+      }
+      
+      /* 
+        ##Device = Tablets, Ipads (portrait)
+        ##Screen = B/w 768px to 1024px
+      */
+      
+      @media (min-width: 768px) and (max-width: 1024px) {
+        
+        .how-to-phone {
+          width: 50%;
+        }
+        .prev-how, .next-how {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 10px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        .row-content {
+          display: flex;
+          flex-flow: nowrap;
+          flex-direction: column;
+        }
+        .site-headline {
+          font-size: 2rem;
+        }
+        .site-tagline {
+          font-size: 1rem;
+          color: black;
+          font-weight: 500;
+          padding-top: 30px;
+        }
+        .logo-section-container {
+          padding-top: 50px;
+          padding-left: 30px;
+        }
+        .logo-icon-k {
+          height: 20%;
+          width: 20%;
+          padding-top: 10px;
+        }
+        .logo-icon-kidlat {
+          height: 80%;
+          width: 50%;
+          padding-top: 10px;
+          padding-left: 20px;
+        }
+        .img-area-1 {
+          height: 200px;
+          width: 45vh;
+        }
+        .img-area-2 {
+          padding-left: 15px;
+          height: 200px;
+          width: 47vh;
+        }
+        .next-how {
+          margin-left: 410px;
+          border-radius: 3px 0 0 3px;
+        }
+        .prev-how {
+          margin-left: 0px;
+          border-radius: 3px 0 0 3px;
+        }
+        .item-services .item-inner {
+          display: flex;
+          flex-flow: nowrap;
+          flex-direction: row;
+        }
+        .item .item-inner h5 {
+          padding: 30px;
+          padding-top: 30px;
+        }
+        .item div {
+          padding-top: 30px;
+        }
+        
+      }
+      
+      /* 
+        ##Device = Tablets, Ipads (landscape)
+        ##Screen = B/w 768px to 1024px
+      */
+      
+      @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        
+        .how-to-phone {
+          width: 50%;
+        }
+        .prev-how, .next-how {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 10px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        .row-content {
+          display: flex;
+          flex-flow: nowrap;
+          flex-direction: column;
+        }
+        .site-headline {
+          font-size: 2rem;
+        }
+        .site-tagline {
+          font-size: 1rem;
+          color: black;
+          font-weight: 500;
+          padding-top: 30px;
+        }
+        .logo-section-container {
+          padding-top: 50px;
+          padding-left: 30px;
+        }
+        .logo-icon-k {
+          height: 20%;
+          width: 20%;
+          padding-top: 10px;
+        }
+        .logo-icon-kidlat {
+          height: 80%;
+          width: 50%;
+          padding-top: 10px;
+          padding-left: 20px;
+        }
+        .img-area-1 {
+          height: 200px;
+          width: 45vh;
+        }
+        .img-area-2 {
+          padding-left: 15px;
+          height: 200px;
+          width: 47vh;
+        }
+        .next-how {
+          margin-left: 410px;
+          border-radius: 3px 0 0 3px;
+        }
+        .prev-how {
+          margin-left: 0px;
+          border-radius: 3px 0 0 3px;
+        }
+        .item-services .item-inner {
+          display: flex;
+          flex-flow: nowrap;
+          flex-direction: row;
+        }
+        .item .item-inner h5 {
+          padding: 30px;
+          padding-top: 30px;
+        }
+        .item div {
+          padding-top: 30px;
+        }
+        
+      }
+      
+      /* 
+        ##Device = Low Resolution Tablets, Mobiles (Landscape)
+        ##Screen = B/w 481px to 767px
+      */
+      
+      @media (min-width: 481px) and (max-width: 767px) {
+        
+        .how-to-phone{
+          width: 50%;
+        }
+        .prev-how, .next-how {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 10px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        .site-headline {
+          font-size: 1.5rem;
+          padding: 20px;
+        }
+        .faster-headline{
+          font-size: 1rem;
+          color: black;
+          font-weight: bold;
+          padding-top: 20px;
+        }
+    
+        .site-tagline {
+          font-size: 0.5rem;
+          color: black;
+          font-weight: 500;
+          padding-top: 30px;
+        }
+        
+        .logo-section-container{
+          padding-top: 50px;
+          padding-left: 30px;
+        }
+        .logo-icon-k{
+          height: 20%;
+          width: 20%;
+          padding-top: 10px;
+        }
+        .logo-icon-kidlat{
+          height: 80%;
+          width: 50%;
+          padding-top: 10px;
+          padding-left: 20px;
+        }
+        .img-area-1{
+          height: 150px;
+          width:35vh;
+        }
+        .img-area-2{
+          height: 150px;
+          width:38vh;
+        }
+        .next-how {
+          margin-left: 320px;
+          border-radius: 3px 0 0 3px;
+        }
+        .prev-how {
+          margin-left: 104px;
+          border-radius: 3px 0 0 3px;
+        }
+       
+        
+      }
+      
+      /* 
+        ##Device = Most of the Smartphones Mobiles (Portrait)
+        ##Screen = B/w 320px to 479px
+      */
+      
+      @media (min-width: 320px) and (max-width: 480px) {
+        
+        .logo-section-container{
+          padding-top: 50px;
+          padding-left: 30px;
+        }
+        .logo-icon-k{
+          height: 30%;
+          width: 30%;
+          padding-top: 10px;
+        }
+        .logo-icon-kidlat{
+          height: 100%;
+          width: 70%;
+          padding-top: 10px;
+          padding-left: 20px;
+        }
+        .item .item-inner{
+          display: inline-flex;
+          padding: 30px;
+        }
+        .item .item-inner h5{
+          padding: 10px;
+          padding-top: 40px;
+        }
+        .img-area-1{
+          height: 200px;
+          width:45vh;
+        }
+        .img-area-2{
+          padding-left: 15px;
+          height: 200px;
+          width:47vh;
+        }
+        .next-how {
+          margin-left: 280px;
+          border-radius: 3px 0 0 3px;
+        }
+        .prev-how {
+          margin-left: 45px;
+          border-radius: 3px 0 0 3px;
+        }
+        
       }
 
         /* @media only screen 
