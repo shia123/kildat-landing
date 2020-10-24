@@ -10100,8 +10100,8 @@
         
         
       } 
-      @media screen and (device-width: 1024px) and (device-height: 1366px) 
-      and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+      @media screen and (device-width: 1024px)
+      and (orientation: portrait) {
         .how-to-phone {
           width: 50%;
         }
