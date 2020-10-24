@@ -73,7 +73,7 @@
           <img src="assets/images/bkidlat.png" style="width: inherit" alt="rider" />
         </div>
         <div class="col-md-6">
-          <div id="signup-alert"></div>
+          
           <h2 class="page-title pt-2 mb-3 font-weight-bold">Sign up now as a Kidlat Driver!</h2>
           <form name="sign-up-form" id="form-sign" class="row" method="POST" enctype="multipart/form-data">
             <div class="col-sm-6 form-group">
@@ -118,6 +118,7 @@
                 <button type="submit" class="btn btn-primary btn-submit">Submit</button>
               </div>
           </form>
+          <div id="signup-alert"></div>
         </div>
       </div>
     </div>
@@ -441,7 +442,7 @@
           }).then((res) => {
             if (res.ok) {
               $("#signup-alert").append(
-                "<div class='alert alert-success alert-dismissible'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>Registration successful! We will Contact you as soon as possible! Thank you!</div>"
+                "<div class='alert alert-success alert-dismissible'><a href='rider.html' class='close' data-dismiss='alert' aria-label='close'>&times;</a>Registration successful! We will Contact you as soon as possible! Thank you!</div>"
               );
              
               $("form[name='sign-up-form']").each(function () {
