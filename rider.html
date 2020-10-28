@@ -35,7 +35,7 @@
       <div class="container logo-section-container position-relative">
 
         <nav class="navbar navbar-expand-lg">
-          <h1 class="site-logo"><a class="navbar-brand" href="kidlat.html">
+          <h1 class="site-logo"><a class="navbar-brand" href="index.html">
               <img class="logo-icon-k" src="assets/images/k.png" alt="logo"><img class="logo-icon-kidlat"
                 src="assets/images/cities/kidlatword.png" alt="logo"></a></h1>
 
@@ -67,13 +67,14 @@
 
   </header>
   <div class="page-header">
+    <!-- <h1 style="text-align: center;">Page is currently on Working, Please Wait and Try Again.. Thank you</h1> -->
     <div class="container">
       <div class="row row justify-content-end">
         <div class="col-md-6" style="padding: 30px;">
           <img src="assets/images/bkidlat.png" style="width: inherit" alt="rider" />
         </div>
         <div class="col-md-6">
-          
+
           <h2 class="page-title pt-2 mb-3 font-weight-bold">Sign up now as a Kidlat Driver!</h2>
           <form name="sign-up-form" id="form-sign" class="row" method="POST" enctype="multipart/form-data">
             <div class="col-sm-6 form-group">
@@ -104,7 +105,7 @@
             </div>
             <div class="col-sm-12 form-group">
 
-              <label>Upload Motorcycle OR/CR</label>
+              <label>Upload Motorcycle OR and CR</label>
               <input name="orcr" type="file" class="orcr" />
             </div>
 
@@ -112,7 +113,7 @@
 
 
             <div class="col-sm-12 form-group">
-              <input type="checkbox" name="agree" class="agree" required >
+              <input type="checkbox" name="agree" class="agree" required>
               <label>I agree to the Privacy Policy, Terms and Conditions of Kidlat Delivery </label>
               <div class="col-sm-12 form-group text-right">
                 <button type="submit" class="btn btn-primary btn-submit">Submit</button>
@@ -122,6 +123,7 @@
         </div>
       </div>
     </div>
+
     <!--//container-->
   </div>
 
@@ -133,9 +135,9 @@
           <ul class="list-unstyled">
             <div class="mb-4">
 
-              <a href="companyprofile.html">Company Profile</a><br>	                            	
+              <a href="companyprofile.html">Company Profile</a><br>
               128 Kidlat Logistics Services Co.
-              
+
 
             </div>
 
@@ -221,6 +223,10 @@
   <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
   <script type="text/javascript">
     $(function () {
+
+      $(window).load(function () {
+        $('.form-sign').get(0).reset(); //clear form data on page load
+      });
 
       // let validator = $("form[name='sign-up-form']").validate();
 
@@ -330,17 +336,78 @@
       $(".license").change(function () {
         var file = this.files[0];
         console.log(file)
-        serverFileFirst(file);
+        if (!$(".license").val()) {
+          console.log("field is Empty")
+          $(".license").val('');
+        }
+        else {
+          if (file.type == "image/png" || file.type == "image/jpg" || file.type == "image/jpeg") {
+            if (file.size <= 10000000) {
+              console.log("image is valid")
+              serverFileFirst(file);
+            }
+            else {
+              alert("Only Accept 10mb below")
+              $(".license").val('');
+            }
+          }
+          else {
+            alert("Invalid File Format, must be images with extension of PNG,JPEG or JPG")
+            $(".license").val('');
+          }
+        }
+
+        //  serverFileFirst(file);
       });
       $(".clearance").change(function () {
         var file = this.files[0];
         console.log(file)
-        serverFileSecond(file);
+        if (!$(".clearance").val()) {
+          console.log("field is Empty")
+          $(".clearance").val('');
+        }
+        else {
+          if (file.type == "image/png" || file.type == "image/jpg" || file.type == "image/jpeg") {
+            if (file.size <= 10000000) {
+              console.log("image is valid")
+              serverFileSecond(file);
+            }
+            else {
+              alert("Only Accept 10mb below")
+              $(".clearance").val('');
+            }
+          }
+          else {
+            alert("Invalid File Format, must be images with extension of PNG,JPEG or JPG")
+            $(".clearance").val('');
+          }
+        }
+
       });
       $(".orcr").change(function () {
         var file = this.files[0];
         console.log(file)
-        serverFileLast(file);
+        if (!$(".orcr").val()) {
+          console.log("field is Empty")
+          $(".orcr").val('');
+        }
+        else {
+          if (file.type == "image/png" || file.type == "image/jpg" || file.type == "image/jpeg") {
+            if (file.size <= 10000000) {
+              console.log("image is valid")
+              serverFileLast(file);
+            }
+            else {
+              alert("Only Accept 10mb below")
+              $(".orcr").val('');
+            }
+          }
+          else {
+            alert("Invalid File Format, must be images with extension of PNG,JPEG or JPG")
+            $(".orcr").val('');
+          }
+        }
+
       });
       $(".p-number").on("keyup", function (e) {
         e.target.value = e.target.value.replace(/[^\d]/, "");
@@ -365,8 +432,8 @@
           license: "required",
           mobile: "required",
           address: "required",
-          orcr:"required",
-          clearance:"required",
+          orcr: "required",
+          clearance: "required",
           agree: "required",
           email: {
             required: true,
@@ -382,8 +449,8 @@
           lastname: "This field is required",
           agree: " Please Check this field for Terms and Policies ",
           license: "This field is required.",
-          orcr:"This field is required",
-          clearance:"This field is required",
+          orcr: "This field is required",
+          clearance: "This field is required",
           mobile: "This field is required.",
           email: "Please enter a valid email address",
         },
@@ -420,7 +487,7 @@
 
 
 
-          fetch('https://api.kidlat.com.ph/rider/register', {
+          fetch('http://192.168.254.105:4000/rider/register', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
@@ -437,7 +504,7 @@
                 mobile: form.mobile.value,
                 agree: form.agree.value,
                 status: "pending",
-                vehicleType:"motorcycle",
+                vehicleType: "motorcycle",
               },
             })
           }).then((res) => {
@@ -445,7 +512,7 @@
               $("#signup-alert").append(
                 "<div class='alert alert-success alert-dismissible'><a href='rider.html' class='close' data-dismiss='alert' aria-label='close'>&times;</a>Registration successful! We will Contact you as soon as possible! Thank you!</div>"
               );
-             
+
               $("form[name='sign-up-form']").each(function () {
                 this.reset();
 
