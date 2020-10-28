@@ -75,7 +75,7 @@
         </div>
         <div class="col-md-6">
 
-          <h2 class="page-title pt-2 mb-3 font-weight-bold">Sign up now as a Kidlat Driver!</h2>
+          <h2 class="page-title pt-2 mb-3 font-weight-bold">Sign up now as a Kidlat Test Driver!</h2>
           <form name="sign-up-form" id="form-sign" class="row" method="POST" enctype="multipart/form-data">
             <div class="col-sm-6 form-group">
               <input name="firstname" class="form-control fname" placeholder="First Name" />
@@ -224,10 +224,13 @@
   <script type="text/javascript">
     $(function () {
 
-      $(window).load(function () {
-        $('#form-sign').get(0).reset(); //clear form data on page load
-      });
 
+
+      $(window).bind("pageshow", function () {
+        var form = $('#form-sign');
+        // let the browser natively reset defaults
+        form[0].reset();
+      });
       // let validator = $("form[name='sign-up-form']").validate();
 
       var return_first;
