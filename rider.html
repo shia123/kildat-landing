@@ -487,7 +487,18 @@
           //   success: function (data) {
           //     console.log(data);
           //   }
+          if(return_first==""){
+            alert("Error on uploading License, Try Again")
+          }
+          else if(return_second==""){
+            alert("Error on uploading Nbi Clearance, Try Again")
+          }
+         else if(return_last==""){
+            alert("Error on uploading ORCR, Try Again")
+          }
 
+
+          else{
 
 
           fetch('http://192.168.254.105:4000/rider/register', {
@@ -532,6 +543,7 @@
             }
           })
             .catch(err => console.log(err));
+          }
 
 
 
