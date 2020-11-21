@@ -91,14 +91,14 @@
                             <input name="unregisbname" class="form-control fname" placeholder="Business Name" />
                         </div>
                         <div class="col-sm-12 form-group">
-                            <input name="unregisaddress" class="form-control" placeholder="Complete Address" />
+                            <input name="unregisaddress" class="form-control" placeholder="Complete Business Address" />
                         </div>
                         <div class="col-sm-12 form-group">
                             <input name="unregisphone" type="text" class="form-control p-number"
-                                placeholder="Phone Number" maxlength="11" />
+                                placeholder="Business Phone Number" maxlength="11" />
                         </div>
                         <div class="col-sm-12 form-group">
-                            <input name="unregisemail" type="email" class="form-control" placeholder="Email Address" />
+                            <input name="unregisemail" type="email" class="form-control" placeholder="Business Email Address" />
                         </div>
                         <div class="col-sm-12 form-group">
                             <label>Upload High Quality Brand Logo (optional)</label>
@@ -108,8 +108,13 @@
                         </div>
                         <div class="col-sm-12 form-group">
 
-                            <label>Upload (1) Valid ID owner / signatory (photo of front and back)</label>
-                            <input name="unregisoaddress" type="file" />
+                            <label>Upload (1) Valid ID  of owner / signatory (Front)</label>
+                            <input name="unregisfront" type="file" />
+                        </div>
+                        <div class="col-sm-12 form-group">
+
+                            <label>Upload (1) Valid ID  of owner / signatory (Back)</label>
+                            <input name="unregisback" type="file" />
                         </div>
                         <div class="col-sm-12 form-group">
 
@@ -146,14 +151,14 @@
                         <input name="regisbname" class="form-control fname" placeholder="Business Name" />
                     </div>
                     <div class="col-sm-12 form-group">
-                        <input name="regisaddress" class="form-control" placeholder="Complete Address" />
+                        <input name="regisaddress" class="form-control" placeholder="Complete Business Address" />
                     </div>
                     <div class="col-sm-12 form-group">
-                        <input name="regisphone" type="text" class="form-control p-number" placeholder="Phone Number"
+                        <input name="regisphone" type="text" class="form-control p-number" placeholder="Business Phone Number"
                             maxlength="11" />
                     </div>
                     <div class="col-sm-12 form-group">
-                        <input name="regisemail" type="email" class="form-control" placeholder="Email Address" />
+                        <input name="regisemail" type="email" class="form-control" placeholder="Business Email Address" />
                     </div>
                     <div class="col-sm-12 form-group">
                         <label>Upload High Quality Brand Logo</label>
@@ -168,8 +173,13 @@
                     </div>
                     <div class="col-sm-12 form-group">
 
-                        <label>Upload (1) Valid ID owner / signatory (photo of front and back)</label>
-                        <input name="regisoaddress" type="file" />
+                        <label>Upload (1) Valid ID of  owner / signatory (Front)</label>
+                        <input name="regisfront" type="file" />
+                    </div>
+                    <div class="col-sm-12 form-group">
+
+                        <label>Upload (1) Valid ID of  owner / signatory (Back)</label>
+                        <input name="regisback" type="file" />
                     </div>
                     <div class="col-sm-12 form-group">
 
@@ -356,7 +366,8 @@
                     unregisphone: "required",
                     unregisblogo: "required",
                     unregisaddress: "required",
-                    unregisoaddress: "required",
+                    unregisfront: "required",
+                    unregisback: "required",
                     unregisbir: "required",
                     unregisitems: "required",
                     unregisagree: "required",
@@ -372,6 +383,8 @@
                     unregisbname: "This field is required",
                     unregisstorefront:"This field is required",
                     unregisphone: "This field is required",
+                    unregisfront: "This field is required",
+                    unregisback: "This field is required",
                     unregisblogo: "This field is required",
                     unregisaddress: "This field is required",
                     unregisoaddress: "This field is required",
@@ -401,7 +414,8 @@
                     regisblogo: "required",
                     regisphone: "required",
                     regisaddress: "required",
-                    regisoaddress: "required",
+                    regisback: "required",
+                    regisfront: "required",
                     regisstorefront: "required",
                     regisbir: "required",
                     regisitems: "required",
@@ -419,7 +433,8 @@
                     regisbname: "This field is required",
                     regisphone: "This field is required",
                     regisaddress: "This field is required",
-                    regisoaddress: "This field is required",
+                    regisback: "This field is required",
+                    regisfront: "This field is required",
                     regisstorefront: "This field is required",
                     regisbir: "This field is required",
                     regisitems: "This field is required",
