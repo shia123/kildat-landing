@@ -63,8 +63,7 @@
     <!--//header-->
     <div class="page-header">
         <div class="col-6 category">
-            <label style="font-size: 1.5rem;padding-right: 50px;align-content: center;color: red;">Choose a
-                Category</label>
+            <label style="font-size: 1.5rem;padding-right: 50px;align-content: center;color: red; font-weight:bold;">CHOOSE A CATEGORY</label>
             <button class="btn btn-unclick registered">Registered Businesss</button>
             <button class="btn btn-unclick unregistered" style="margin-left: 20px;">Unregistered Businesss</button>
         </div>
@@ -103,21 +102,13 @@
                         </div>
                         <div class="col-sm-12 form-group">
                             <label>Upload High Quality Brand Logo (optional)</label>
-                            <input name="unregislogo" type="file" /><br>
+                            <input name="unregisblogo" type="file" /><br>
                         
 
                         </div>
                         <div class="col-sm-12 form-group">
 
-                            <label>Upload High Quality Menu Item Photos</label><br>
-
-                            <input name="unregisitems" type="file" multiple />
-                        </div>
-                        <div class="col-sm-12 form-group">
-
-                            <label>Upload (1) Valid ID owner / signatory (photo of front and back) with address and date
-                                of
-                                birth</label>
+                            <label>Upload (1) Valid ID owner / signatory (photo of front and back)</label>
                             <input name="unregisoaddress" type="file" />
                         </div>
                         <div class="col-sm-12 form-group">
@@ -171,18 +162,13 @@
                     </div>
                     <div class="col-sm-12 form-group">
 
-                        <label>Upload High Quality Menu Item Photos</label>
-                        <input name="regisitems" type="file" multiple />
-                    </div>
-                    <div class="col-sm-12 form-group">
-
-                        <label>Upload BIR 2303/ Business Permit</label>
+                        <label>Business Permit</label>
+                        <br>
                         <input name="regisbir" type="file" />
                     </div>
                     <div class="col-sm-12 form-group">
 
-                        <label>Upload (1) Valid ID owner / signatory (photo of front and back) with address and date of
-                            birth</label>
+                        <label>Upload (1) Valid ID owner / signatory (photo of front and back)</label>
                         <input name="regisoaddress" type="file" />
                     </div>
                     <div class="col-sm-12 form-group">
@@ -366,7 +352,9 @@
                     unregisfirstname: "required",
                     unregislastname: "required",
                     unregisbname: "required",
+                    unregisstorefront:'required',
                     unregisphone: "required",
+                    unregisblogo: "required",
                     unregisaddress: "required",
                     unregisoaddress: "required",
                     unregisbir: "required",
@@ -382,7 +370,9 @@
                     unregisfirstname: "This field is required",
                     unregislastname: "This field is required",
                     unregisbname: "This field is required",
+                    unregisstorefront:"This field is required",
                     unregisphone: "This field is required",
+                    unregisblogo: "This field is required",
                     unregisaddress: "This field is required",
                     unregisoaddress: "This field is required",
                     unregisbir: "This field is required",
@@ -408,7 +398,7 @@
                     regisfirstname: "required",
                     regislastname: "required",
                     regisbname: "required",
-                    regislogo: "required",
+                    regisblogo: "required",
                     regisphone: "required",
                     regisaddress: "required",
                     regisoaddress: "required",
@@ -425,7 +415,7 @@
                 messages: {
                     regisfirstname: "This field is required",
                     regislastname: "This field is required",
-                    regislogo: "This field is required",
+                    regisblogo: "This field is required",
                     regisbname: "This field is required",
                     regisphone: "This field is required",
                     regisaddress: "This field is required",
