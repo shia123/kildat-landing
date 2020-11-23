@@ -27,60 +27,78 @@
 <body>
     <header class="header"
         style="background-color: #efce3d;background-image: linear-gradient(to right,#fddb3a,#fff48f);">
+
         <div class="branding">
-            <div class="container position-relative" style="padding-left: 3in;">
+
+            <div class="container logo-section-container position-relative">
 
                 <nav class="navbar navbar-expand-lg">
-                    <h1 class="site-logo"><a class="navbar-brand" href="kidlat.html"><img class="logo-icon"
-                                src="assets/images/k.png" alt="logo"
-                                style="height: 15%;width: 15%;padding-top: 30px;"><img class="logo-icon"
-                                src="assets/images/cities/kidlatword.png" alt="logo"
-                                style="height: 50%;width: 50%;padding-top: 30px;padding-left: 40px;"></a></h1>
+                    <h1 class="site-logo"><a class="navbar-brand" href="index.html">
+                            <img class="logo-icon-k" src="assets/images/k.png" alt="logo"><img class="logo-icon-kidlat"
+                                src="assets/images/cities/kidlatword.png" alt="logo"></a></h1>
 
 
                 </nav>
 
                 <ul class="social-list list-inline mb-0 position-absolute">
-					<li class="list-inline-item">
-						<a class="text-dark" href="http://twitter.com/@Kidlatdelivery" target="_blank"><i
-								class="fab fa-twitter fa-fw fa-lg"></i></a>
-					</li>
-					<li class="list-inline-item">
-						<a class="text-dark" href="https://www.facebook.com/kidlatdelivery" target="_blank"><i
-								class="fab fa-facebook-f fa-fw fa-lg"></i></a>
-					</li>
-					<li class="list-inline-item">
-						<a class="text-dark" href="http://instagram.com/kidlat.delivery" target="_blank"><i
-								class="fab fa-instagram fa-fw fa-lg"></i></a>
-					</li>
-				</ul>
+                    <li class="list-inline-item">
+                        <a class="text-dark" href="http://twitter.com/@Kidlatdelivery" target="_blank"><i
+                                class="fab fa-twitter fa-fw fa-lg"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-dark" href="https://www.facebook.com/kidlatdelivery" target="_blank"><i
+                                class="fab fa-facebook-f fa-fw fa-lg"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-dark" href="http://instagram.com/kidlat.delivery" target="_blank"><i
+                                class="fab fa-instagram fa-fw fa-lg"></i></a>
+                    </li>
+                </ul>
                 <!--//social-list-->
+
             </div>
             <!--//container-->
+
         </div>
         <!--//branding-->
+
+
     </header>
     <!--//header-->
     <div class="page-header">
-        <div class="col-6 category">
-            <label style="font-size: 1.5rem;padding-right: 50px;align-content: center;color: red; font-weight:bold;">CHOOSE A CATEGORY</label>
-            <button class="btn btn-unclick registered">Registered Businesss</button>
-            <button class="btn btn-unclick unregistered" style="margin-left: 20px;">Unregistered Businesss</button>
-        </div>
+
 
         <div class="container">
-            <div class="row row justify-content-end">
-                <div class="col-md-6" style="padding: 30px;">
-                    <img src="assets/images/merchant.png" style="width: 60vh;height: 60vh;" alt="rider" />
+            <div class="row row ">
+                <div class="category">
+                    <label>CHOOSE A CATEGORY</label>
+                    <button class="btn btn-unclick registered">Registered Businesss</button>
+                    <button class="btn btn-unclick unregistered">Unregistered Businesss</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/partner-merchant.png" style="width: 55vh;height: 65vh;" alt="rider" />
 
                 </div>
 
                 <div class="col-md-6 unregis-form">
-
                     <div id="unregis-signup-alert"></div>
                     <h2 class="page-title pt-2 mb-3 font-weight-bold">Sign up now as a Kidlat Merchant!</h2>
                     <h4>(Unregistered Business)</h4>
                     <form name="unregis-sign-up-form" class="row">
+
+                        <div class="col-sm-12 form-group">
+
+                            <select class="custom-select unregisselect" name="unregisselect">
+                                <option value="0">Merchant Type:</option>
+                                <option value="1">Food - Food sellers with physical shop</option>
+                                <option value="2">Kusina - Food sellers without physical shop</option>
+                                <option value="3">Palengke - Wet/dry Market sellers with physical shop</option>
+                                <option value="4">Grocery - Grocery owners with physical shop</option>
+                                <option value="5">Shop - Ex. Hardware / Botique / RTW / Appliance Center / etc..</option>
+                                <option value="6">Services - Ex. Laundry / Massage /Aircon Cleaning / Plumbing / etc..</option>
+                            </select>
+
+                        </div>
                         <div class="col-sm-6 form-group">
                             <input name="unregisfirstname" class="form-control fname" placeholder="First Name" />
                         </div>
@@ -98,28 +116,33 @@
                                 placeholder="Business Phone Number" maxlength="11" />
                         </div>
                         <div class="col-sm-12 form-group">
-                            <input name="unregisemail" type="email" class="form-control" placeholder="Business Email Address" />
+                            <input name="unregisemail" type="email" class="form-control"
+                                placeholder="Business Email Address" />
                         </div>
                         <div class="col-sm-12 form-group">
                             <label>Upload High Quality Brand Logo (optional)</label>
-                            <input name="unregisblogo" type="file" /><br>
-                        
+                            <input name="unregisblogo" type="file" class="unregisblogo" /><br>
+                            <div id="status-unregis-blogo" style="color:green;">UPLOADING...</div>
+
 
                         </div>
                         <div class="col-sm-12 form-group">
 
-                            <label>Upload (1) Valid ID  of owner / signatory (Front)</label>
-                            <input name="unregisfront" type="file" />
+                            <label>Upload (1) Valid ID of owner / signatory (Front)</label>
+                            <input name="unregisfront" type="file" class="unregisfront" />
+                            <div id="status-unregis-front" style="color:green;">UPLOADING...</div>
                         </div>
                         <div class="col-sm-12 form-group">
 
-                            <label>Upload (1) Valid ID  of owner / signatory (Back)</label>
-                            <input name="unregisback" type="file" />
+                            <label>Upload (1) Valid ID of owner / signatory (Back)</label>
+                            <input name="unregisback" type="file" class="unregisback" />
+                            <div id="status-unregis-back" style="color:green;">UPLOADING...</div>
                         </div>
                         <div class="col-sm-12 form-group">
 
                             <label>Upload Store Front Photo (optional)</label>
-                            <input name="unregisstorefront" type="file" />
+                            <input name="unregisstorefront" type="file" class="unregisstorefront" />
+                            <div id="status-unregis-store-front" style="color:green;">UPLOADING...</div>
                         </div>
 
 
@@ -140,7 +163,20 @@
                 <div id="regis-signup-alert"></div>
                 <h2 class="page-title pt-2 mb-3 font-weight-bold">Sign up now as a Kidlat Merchant!</h2>
                 <h4>(Registered Business)</h4>
-                <form name="regis-sign-up-form" class="row">
+                <form name="regis-sign-up-form" class="row" method="POST" enctype="multipart/form-data">
+                    <div class="col-sm-12 form-group">
+
+                        <select class="custom-select regisselect" name="regisselect">
+                            <option value="0">Merchant Type:</option>
+                            <option value="1">Food - Food sellers with physical shop</option>
+                            <option value="2">Kusina - Food sellers without physical shop</option>
+                            <option value="3">Palengke - Wet/dry Market sellers with physical shop</option>
+                            <option value="4">Grocery - Grocery owners with physical shop</option>
+                            <option value="5">Shop - Ex. Hardware / Botique / RTW / Appliance Center / etc..</option>
+                            <option value="6">Services - Ex. Laundry / Massage /Aircon Cleaning / Plumbing / etc..</option>
+                        </select>
+
+                    </div>
                     <div class="col-sm-6 form-group">
                         <input name="regisfirstname" class="form-control fname" placeholder="First Name" />
                     </div>
@@ -154,37 +190,43 @@
                         <input name="regisaddress" class="form-control" placeholder="Complete Business Address" />
                     </div>
                     <div class="col-sm-12 form-group">
-                        <input name="regisphone" type="text" class="form-control p-number" placeholder="Business Phone Number"
-                            maxlength="11" />
+                        <input name="regisphone" type="text" class="form-control p-number"
+                            placeholder="Business Phone Number" maxlength="11" />
                     </div>
                     <div class="col-sm-12 form-group">
-                        <input name="regisemail" type="email" class="form-control" placeholder="Business Email Address" />
+                        <input name="regisemail" type="email" class="form-control"
+                            placeholder="Business Email Address" />
                     </div>
                     <div class="col-sm-12 form-group">
                         <label>Upload High Quality Brand Logo</label>
-                        <input name="regisblogo" type="file" />
+                        <input name="regisblogo" type="file" class="regisblogo" />
+                        <div id="status-regis-blogo" style="color:green;">UPLOADING...</div>
 
                     </div>
                     <div class="col-sm-12 form-group">
 
                         <label>Business Permit</label>
                         <br>
-                        <input name="regisbir" type="file" />
+                        <input name="regisbir" type="file" class="regisbir" />
+                        <div id="status-regis-permit" style="color:green;">UPLOADING...</div>
                     </div>
                     <div class="col-sm-12 form-group">
 
-                        <label>Upload (1) Valid ID of  owner / signatory (Front)</label>
-                        <input name="regisfront" type="file" />
+                        <label>Upload (1) Valid ID of owner / signatory (Front)</label>
+                        <input name="regisfront" type="file" class="regisfront" />
+                        <div id="status-regis-front" style="color:green;">UPLOADING...</div>
                     </div>
                     <div class="col-sm-12 form-group">
 
-                        <label>Upload (1) Valid ID of  owner / signatory (Back)</label>
-                        <input name="regisback" type="file" />
+                        <label>Upload (1) Valid ID of owner / signatory (Back)</label>
+                        <input name="regisback" type="file" class="regisback" />
+                        <div id="status-regis-back" style="color:green;">UPLOADING...</div>
                     </div>
                     <div class="col-sm-12 form-group">
 
                         <label>Upload Store Front Photo</label>
-                        <input name="regisstorefront" type="file" />
+                        <input name="regisstorefront" type="file" class="regisstorefront" />
+                        <div id="status-regis-store-front" style="color:green;">UPLOADING...</div>
                     </div>
 
 
@@ -200,6 +242,7 @@
             </div>
         </div>
     </div>
+
     <!--//container-->
     </div>
 
@@ -210,9 +253,9 @@
                     <h4 class="col-heading">About Kidlat Delivery</h4>
                     <ul class="list-unstyled">
                         <div class="mb-4">
-                            <a href="companyprofile.html">Company Profile</a><br>	                            	
+                            <a href="companyprofile.html">Company Profile</a><br>
                             128 Kidlat Logistics Services Co.
-                            
+
 
                         </div>
 
@@ -297,8 +340,12 @@
 
     <!-- Page Specific JS -->
     <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="assets/js/select-option.js"></script>
+    <script type="text/javascript" src="assets/js/merchant-registered.js"></script>
+    <script type="text/javascript" src="assets/js/merchant-unregistered.js"></script>
     <script type="text/javascript">
         $(function () {
+
             var stat = "hide";
             var stat1 = "hide";
             $("input").prop('disabled', true);
@@ -357,102 +404,7 @@
                 e.target.value = e.target.value.replace(/[0-9]/, "");
 
             })
-            $("form[name='unregis-sign-up-form']").validate({
-                rules: {
-                    unregisfirstname: "required",
-                    unregislastname: "required",
-                    unregisbname: "required",
-                    unregisstorefront:'required',
-                    unregisphone: "required",
-                    unregisblogo: "required",
-                    unregisaddress: "required",
-                    unregisfront: "required",
-                    unregisback: "required",
-                    unregisbir: "required",
-                    unregisitems: "required",
-                    unregisagree: "required",
-                    unregisemail: {
-                        required: true,
-                        email: true,
-                    }
-                },
-                // Specify validation error messages
-                messages: {
-                    unregisfirstname: "This field is required",
-                    unregislastname: "This field is required",
-                    unregisbname: "This field is required",
-                    unregisstorefront:"This field is required",
-                    unregisphone: "This field is required",
-                    unregisfront: "This field is required",
-                    unregisback: "This field is required",
-                    unregisblogo: "This field is required",
-                    unregisaddress: "This field is required",
-                    unregisoaddress: "This field is required",
-                    unregisbir: "This field is required",
-                    unregisitems: "This field is required",
-                    unregisagree: "Please Check this field for Terms and Policies ",
-                    unregisemail: "Please enter a valid email address",
-                },
-                submitHandler: function (form) {
-                    //ajax fires here!
-                    //Append this after ajax submit success
-                    $("#unregis-signup-alert").append(
-                        "<div class='alert alert-success alert-dismissible'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a><strong>Success!</strong> Registration successful</div>"
-                    );
-                    // invoke this function if after successfully submitted the form
-                    $("form[unregis-name='sign-up-form']").each(function () {
-                        this.reset();
-                    });
-                },
-            });
 
-            $("form[name='regis-sign-up-form']").validate({
-                rules: {
-                    regisfirstname: "required",
-                    regislastname: "required",
-                    regisbname: "required",
-                    regisblogo: "required",
-                    regisphone: "required",
-                    regisaddress: "required",
-                    regisback: "required",
-                    regisfront: "required",
-                    regisstorefront: "required",
-                    regisbir: "required",
-                    regisitems: "required",
-                    regisagree: "required",
-                    regisemail: {
-                        required: true,
-                        email: true,
-                    }
-                },
-                // Specify validation error messages
-                messages: {
-                    regisfirstname: "This field is required",
-                    regislastname: "This field is required",
-                    regisblogo: "This field is required",
-                    regisbname: "This field is required",
-                    regisphone: "This field is required",
-                    regisaddress: "This field is required",
-                    regisback: "This field is required",
-                    regisfront: "This field is required",
-                    regisstorefront: "This field is required",
-                    regisbir: "This field is required",
-                    regisitems: "This field is required",
-                    regisagree: "Please Check this field for Terms and Policies ",
-                    regisemail: "Please enter a valid email address",
-                },
-                submitHandler: function (form) {
-                    //ajax fires here!
-                    //Append this after ajax submit success
-                    $("#regis-signup-alert").append(
-                        "<div class='alert alert-success alert-dismissible'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a><strong>Success!</strong> Registration successful</div>"
-                    );
-                    // invoke this function if after successfully submitted the form
-                    $("form[regis-name='sign-up-form']").each(function () {
-                        this.reset();
-                    });
-                },
-            });
         });
     </script>
 </body>

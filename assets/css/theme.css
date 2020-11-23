@@ -9527,14 +9527,11 @@
           -webkit-transform: rotate(-135deg);
         }
 
-        .category {
-          display: inline;
+        .container .category {
+          padding: 20px;
+         
         }
 
-        .category label {
-          padding: 40px;
-          margin-left: 6.5in;
-        }
 
         .modal-dialog {
           margin-top: 47rem;
@@ -9681,6 +9678,12 @@
          .b-kidlat-banner{
           height: 300px;
           width: 200px;
+        }
+        .category label{
+          font-size: 1.5rem;
+          align-content: center;
+          color: red;
+           font-weight:bold;
         }
          @media only screen and (max-device-width: 800px)  and (orientation: portrait) {
           .how-to-phone {
@@ -11283,3 +11286,64 @@
     } 
 
     */
+
+    /* merchant css */
+    .custom-select {
+      position: relative;
+      font-family: Arial;
+    }
+    
+    .custom-select select {
+      display: none; /*hide original SELECT element:*/
+    }
+    
+    .select-selected {
+      background-color: DodgerBlue;
+    }
+    
+    /*style the arrow inside the select element:*/
+    .select-selected:after {
+      position: absolute;
+      content: "";
+      top: 14px;
+      right: 10px;
+      width: 0;
+      height: 0;
+      border: 6px solid transparent;
+      border-color: #fff transparent transparent transparent;
+    }
+    
+    /*point the arrow upwards when the select box is open (active):*/
+    .select-selected.select-arrow-active:after {
+      border-color: transparent transparent #fff transparent;
+      top: 7px;
+    }
+    
+    /*style the items (options), including the selected item:*/
+    .select-items div,.select-selected {
+      color: #ffffff;
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+      cursor: pointer;
+      user-select: none;
+    }
+    
+    /*style items (options):*/
+    .select-items {
+      position: absolute;
+      background-color: DodgerBlue;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 99;
+    }
+    
+    /*hide the items when the select box is closed:*/
+    .select-hide {
+      display: none;
+    }
+    
+    .select-items div:hover, .same-as-selected {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
