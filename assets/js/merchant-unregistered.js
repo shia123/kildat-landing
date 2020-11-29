@@ -42,7 +42,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: "https://staging-api.kidlat.com.ph/rider/merchant/images/upload-single",
+            url: "http://192.168.1.18:4000/rider/merchant/images/upload-single",
             enctype: 'multipart/form-data',
             data: formData,
             processData: false,
@@ -86,7 +86,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: "https://staging-api.kidlat.com.ph/rider/merchant/images/upload-single",
+            url: "http://192.168.1.18:4000/rider/merchant/images/upload-single",
             enctype: 'multipart/form-data',
             data: formData,
             processData: false,
@@ -128,7 +128,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: "https://staging-api.kidlat.com.ph/rider/merchant/images/upload-single",
+            url: "http://192.168.1.18:4000/rider/merchant/images/upload-single",
             enctype: 'multipart/form-data',
             data: formData,
             processData: false,
@@ -170,7 +170,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: "https://staging-api.kidlat.com.ph/rider/merchant/images/upload-single",
+            url: "http://192.168.1.18:4000/rider/merchant/images/upload-single",
             enctype: 'multipart/form-data',
             data: formData,
             processData: false,
@@ -212,7 +212,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: "https://staging-api.kidlat.com.ph/rider/merchant/images/upload-single",
+            url: "http://192.168.1.18:4000/rider/merchant/images/upload-single",
             enctype: 'multipart/form-data',
             data: formData,
             processData: false,
@@ -437,7 +437,7 @@ $(document).ready(function () {
 
 
 
-                fetch('https://staging-api.kidlat.com.ph/rider/merchant/register', {
+                fetch('http://192.168.1.18:4000/rider/merchant/register', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
