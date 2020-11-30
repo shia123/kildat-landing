@@ -9239,6 +9239,7 @@
         .footer .copyright {
           font-size: 0.875rem;
         }
+       
 
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           .footer .download-area .app-stores img.ios {
@@ -9712,7 +9713,10 @@
         .last-2 .card-body{
           width: 70%;
         }
-        @media only screen and (max-device-width: 768px)  and (orientation: portrait) {
+       @media only screen 
+        and (max-device-width: 1024px) 
+        and (min-device-width: 768px)  {
+          
 
           .how-to-phone {
             width: 70%;
@@ -9733,7 +9737,7 @@
           .prev-how, .next-how {
             cursor: pointer;
             position: absolute;
-            top: 40%;
+            top: 50%;
             width: auto;
             padding: 10px;
             margin-top: -22px;
@@ -9743,6 +9747,7 @@
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             user-select: none;
+            background-color: green;
           }
           .row-content {
             display: flex;
@@ -10392,7 +10397,7 @@
           .prev-how, .next-how {
             cursor: pointer;
             position: absolute;
-            top: 30%;
+            top: 60%;
             width: auto;
             padding: 10px;
             margin-top: -22px;
@@ -10442,7 +10447,7 @@
             width: 47vh;
           }
           .next-how {
-            margin-left: 220px;
+            margin-left: 290px;
             border-radius: 3px 0 0 3px;
           }
           .prev-how {
@@ -10454,118 +10459,3 @@
      
         }
        
-
-        @media only screen 
-        and (min-device-width: 540px) 
-        and (max-device-width: 960px)  {
-          .hero-section .container{
-            display: inline;
-            
-          }
-          .how-to-phone{
-            width: 60%;
-          }
-          .card-body {
-            flex: 1 1 auto;
-            min-height: 1px;
-            padding: 1.25rem;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-            width: 50%;
-        }
-          .faq {
-            height: 80px;
-            width: 100%;
-            background: #efce3d;
-            background-image: linear-gradient(#fddb3a, #fff48f);
-          }
-  
-          .ans {
-            height: 120px;
-            width: 100%;
-            background: #efce3d;
-            background-image: linear-gradient(#fddb3a, #fff48f);
-          }
-  
-          .prev-how, .next-how {
-            cursor: pointer;
-            position: absolute;
-            top: 60%;
-            width: auto;
-            padding: 10px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-           
-          
-          }
-          
-          .site-headline {
-            font-size: 2rem;
-            padding: 20px;
-          }
-          .faster-headline{
-            font-size: 1.5rem;
-            color: black;
-            font-weight: bold;
-            padding-top: 20px;
-          }
-      
-          .site-tagline {
-            font-size: 1rem;
-            color: black;
-            font-weight: 500;
-            padding-top: 30px;
-          }
-          
-          .logo-section-container{
-            padding-top: 50px;
-            padding-left: 30px;
-          }
-          .logo-icon-k{
-            height: 20%;
-            width: 20%;
-            padding-top: 10px;
-          }
-          .logo-icon-kidlat{
-            height: 80%;
-            width: 50%;
-            padding-top: 10px;
-            padding-left: 20px;
-          }
-          .img-area-1{
-            height: 150px;
-            width:27vh;
-          }
-          .img-area-2{
-            height: 150px;
-            width:30vh;
-          }
-          .next-how {
-            margin-left: 90px;
-            border-radius: 3px 0 0 3px;
-          }
-          .prev-how {
-            margin-left: -120px;
-            border-radius: 3px 0 0 3px;
-          }
-          .f3{
-            display: inline;
-          }
-  
-          .f23{
-            display: inline;
-          }
-  
-          .last-2{
-            display: inline;
-          }
-          .last-2 .card-body{
-            width: 50%;
-          }
-         
-        }
