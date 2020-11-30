@@ -4200,6 +4200,11 @@
           border: 1px solid rgba(0, 0, 0, 0.125);
           border-radius: 0.25rem;
         }
+       
+        
+        .card-body:hover {
+          box-shadow: 20px 50px 36px 0 rgba(0,0,0,0.2);
+        }
 
         .card>hr {
           margin-right: 0;
@@ -4220,6 +4225,10 @@
           flex: 1 1 auto;
           min-height: 1px;
           padding: 1.25rem;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          width: 100%;
+          
         }
 
         .card-title {
@@ -9527,11 +9536,17 @@
           -webkit-transform: rotate(-135deg);
         }
 
-        .container .category {
-          padding: 20px;
-         
+        .category {
+          display: inline;
         }
 
+        .category label {
+          padding: 20px;
+          font-size: 1.5rem;
+          align-content: center;
+          color: red;
+           font-weight:bold;
+        }
 
         .modal-dialog {
           margin-top: 47rem;
@@ -9679,20 +9694,46 @@
           height: 300px;
           width: 200px;
         }
-        .category label{
-          font-size: 1.5rem;
-          align-content: center;
-          color: red;
-           font-weight:bold;
+        .hero-section .container{
+          display: flex;
         }
-         @media only screen and (max-device-width: 800px)  and (orientation: portrait) {
+
+        .f3{
+          display: flex;
+        }
+
+        .f23{
+          display: flex;
+        }
+
+        .last-2{
+          display: flex;
+        }
+        .last-2 .card-body{
+          width: 70%;
+        }
+        @media only screen and (max-device-width: 768px)  and (orientation: portrait) {
+
           .how-to-phone {
-            width: 50%;
+            width: 70%;
           }
+          .hero-section .container{
+            display: flex;
+            
+          }
+          .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 100%;
+        }
+        
           .prev-how, .next-how {
             cursor: pointer;
             position: absolute;
-            top: 50%;
+            top: 40%;
             width: auto;
             padding: 10px;
             margin-top: -22px;
@@ -9742,32 +9783,36 @@
             width: 47vh;
           }
           .next-how {
-            margin-left: 310px;
+            margin-left: 220px;
             border-radius: 3px 0 0 3px;
           }
           .prev-how {
             margin-left: 0px;
             border-radius: 3px 0 0 3px;
           }
-          .item-services .item-inner {
-            display: flex;
-            flex-flow: nowrap;
-            flex-direction: row;
-          }
-          .item .item-inner h5 {
-            padding: 30px;
-            padding-top: 30px;
-          }
-          .item div {
-            padding-top: 30px;
-          }
+          
+       
+     
         }
 
+        
         @media screen and (device-width: 375px) and (device-height: 667px) 
         and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+          .hero-section .container{
+            display: inline;
+            
+          }
           .how-to-phone{
             width: 60%;
           }
+          .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 50%;
+        }
           .faq {
             height: 80px;
             width: 100%;
@@ -9795,6 +9840,7 @@
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             user-select: none;
+           
           }
           
           .site-headline {
@@ -9835,34 +9881,54 @@
             width:35vh;
           }
           .img-area-2{
-            padding-left: 15px;
+            margin-right: 10px;
             height: 150px;
-            width:38vh;
+            width:37vh;
           }
           .next-how {
-            margin-left: 320px;
+            margin-left: 100px;
             border-radius: 3px 0 0 3px;
           }
           .prev-how {
-            margin-left: 76px;
+            margin-left: -130px;
             border-radius: 3px 0 0 3px;
           }
-          .item-services .item-inner{
+         
+          
+          .f3{
             display: inline;
-            flex-flow: nowrap;
-            flex-direction: row;
-            justify-items: center;
           }
-          .item-inner img{
-            margin-left: 120px;
+  
+          .f23{
+            display: inline;
+          }
+  
+          .last-2{
+            display: inline;
+          }
+          .last-2 .card-body{
+            width: 50%;
           }
         }
 
-        @media screen and (device-width: 360px) and (device-height: 640px) 
+
+        @media screen and (device-width: 320px) and (device-height: 480px) 
         and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+          .hero-section .container{
+            display: inline;
+            
+          }
           .how-to-phone{
             width: 60%;
           }
+          .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 50%;
+        }
           .faq {
             height: 80px;
             width: 100%;
@@ -9880,7 +9946,7 @@
           .prev-how, .next-how {
             cursor: pointer;
             position: absolute;
-            top: 55%;
+            top: 70%;
             width: auto;
             padding: 10px;
             margin-top: -22px;
@@ -9890,6 +9956,7 @@
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             user-select: none;
+          
           }
           
           .site-headline {
@@ -9934,872 +10001,66 @@
             width:30vh;
           }
           .next-how {
-            margin-left: 320px;
+            margin-left: 90px;
             border-radius: 3px 0 0 3px;
           }
           .prev-how {
-            margin-left: 76px;
+            margin-left: -120px;
             border-radius: 3px 0 0 3px;
           }
-          .item-services .item-inner{
+          .f3{
             display: inline;
-            flex-flow: nowrap;
-            flex-direction: row;
-            justify-items: center;
           }
-          .item-inner img{
-            margin-left: 120px;
+  
+          .f23{
+            display: inline;
+          }
+  
+          .last-2{
+            display: inline;
+          }
+          .last-2 .card-body{
+            width: 50%;
           }
          
         }
-        @media only screen 
-        and (min-device-width: 360px) 
-        and (max-device-width: 640px)  {
-  
-        .how-to-phone{
-          width: 50%;
-        }
-        .prev-how, .next-how {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 10px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-        
-        .site-headline {
-          font-size: 1.5rem;
-          padding: 20px;
-        }
-        .faster-headline{
-          font-size: 1rem;
-          color: black;
-          font-weight: bold;
-          padding-top: 20px;
-        }
-    
-        .site-tagline {
-          font-size: 0.5rem;
-          color: black;
-          font-weight: 500;
-          padding-top: 30px;
-        }
-        
-        .logo-section-container{
-          padding-top: 50px;
-          padding-left: 30px;
-        }
-        .logo-icon-k{
-          height: 20%;
-          width: 20%;
-          padding-top: 10px;
-        }
-        .logo-icon-kidlat{
-          height: 80%;
-          width: 50%;
-          padding-top: 10px;
-          padding-left: 20px;
-        }
-        .img-area-1{
-          height: 150px;
-          width:35vh;
-        }
-        .img-area-2{
-          height: 150px;
-          width:38vh;
-        }
-        .next-how {
-          margin-left: 280px;
-          border-radius: 3px 0 0 3px;
-        }
-        .prev-how {
-          margin-left: 94px;
-          border-radius: 3px 0 0 3px;
-        }
        
-        
-        
-      } 
-
-      @media only screen 
-        and (min-device-width: 411px) 
-        and (max-device-width: 731px)  {
-  
-        .how-to-phone{
-          width: 50%;
-        }
-        .prev-how, .next-how {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 10px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-        
-        .site-headline {
-          font-size: 1.5rem;
-          padding: 20px;
-        }
-        .faster-headline{
-          font-size: 1rem;
-          color: black;
-          font-weight: bold;
-          padding-top: 20px;
-        }
-    
-        .site-tagline {
-          font-size: 0.5rem;
-          color: black;
-          font-weight: 500;
-          padding-top: 30px;
-        }
-        
-        .logo-section-container{
-          padding-top: 50px;
-          padding-left: 30px;
-        }
-        .logo-icon-k{
-          height: 20%;
-          width: 20%;
-          padding-top: 10px;
-        }
-        .logo-icon-kidlat{
-          height: 80%;
-          width: 50%;
-          padding-top: 10px;
-          padding-left: 20px;
-        }
-        .img-area-1{
-          height: 150px;
-          width:35vh;
-        }
-        .img-area-2{
-          height: 150px;
-          width:38vh;
-        }
-        .next-how {
-          margin-left: 320px;
-          border-radius: 3px 0 0 3px;
-        }
-        .prev-how {
-          margin-left: 104px;
-          border-radius: 3px 0 0 3px;
-        }
-       
-        
-        
-      } 
-      @media screen and (device-width: 1024px)
-      and (orientation: portrait) {
-        .how-to-phone {
-          width: 50%;
-        }
-        .prev-how, .next-how {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 10px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-        .row-content {
-          display: flex;
-          flex-flow: nowrap;
-          flex-direction: column;
-        }
-        .site-headline {
-          font-size: 2rem;
-        }
-        .site-tagline {
-          font-size: 1rem;
-          color: black;
-          font-weight: 500;
-          padding-top: 30px;
-        }
-        .logo-section-container {
-          padding-top: 50px;
-          padding-left: 30px;
-        }
-        .logo-icon-k {
-          height: 20%;
-          width: 20%;
-          padding-top: 10px;
-        }
-        .logo-icon-kidlat {
-          height: 80%;
-          width: 50%;
-          padding-top: 10px;
-          padding-left: 20px;
-        }
-        .img-area-1 {
-          height: 200px;
-          width: 45vh;
-        }
-        .img-area-2 {
-          padding-left: 15px;
-          height: 200px;
-          width: 47vh;
-        }
-        .next-how {
-          margin-left: 410px;
-          border-radius: 3px 0 0 3px;
-        }
-        .prev-how {
-          margin-left: 0px;
-          border-radius: 3px 0 0 3px;
-        }
-        .item-services .item-inner {
-          display: flex;
-          flex-flow: nowrap;
-          flex-direction: row;
-        }
-        .item .item-inner h5 {
-          padding: 30px;
-          padding-top: 30px;
-        }
-        .item div {
-          padding-top: 30px;
-        }
-      }
-
-      @media screen and (device-width: 375px) and (device-height: 667px) 
-      and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
-        .how-to-phone{
-          width: 60%;
-        }
-        .faq {
-          height: 80px;
-          width: 100%;
-          background: #efce3d;
-          background-image: linear-gradient(#fddb3a, #fff48f);
-        }
-
-        .ans {
-          height: 120px;
-          width: 100%;
-          background: #efce3d;
-          background-image: linear-gradient(#fddb3a, #fff48f);
-        }
-        
-        .prev-how, .next-how {
-          cursor: pointer;
-          position: absolute;
-          top: 55%;
-          width: auto;
-          padding: 10px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-        
-        .site-headline {
-          font-size: 2rem;
-          padding: 20px;
-        }
-        .faster-headline{
-          font-size: 1.5rem;
-          color: black;
-          font-weight: bold;
-          padding-top: 20px;
-        }
-    
-        .site-tagline {
-          font-size: 1rem;
-          color: black;
-          font-weight: 500;
-          padding-top: 30px;
-        }
-        
-        .logo-section-container{
-          padding-top: 50px;
-          padding-left: 30px;
-        }
-        .logo-icon-k{
-          height: 20%;
-          width: 20%;
-          padding-top: 10px;
-        }
-        .logo-icon-kidlat{
-          height: 80%;
-          width: 50%;
-          padding-top: 10px;
-          padding-left: 20px;
-        }
-        .img-area-1{
-          height: 150px;
-          width:35vh;
-        }
-        .img-area-2{
-          padding-left: 15px;
-          height: 150px;
-          width:38vh;
-        }
-        .next-how {
-          margin-left: 320px;
-          border-radius: 3px 0 0 3px;
-        }
-        .prev-how {
-          margin-left: 76px;
-          border-radius: 3px 0 0 3px;
-        }
-        .item-services .item-inner{
-          display: inline;
-          flex-flow: nowrap;
-          flex-direction: row;
-          justify-items: center;
-        }
-        .item-inner img{
-          margin-left: 120px;
-        }
-      } 
-      /* new style responsive */
-      /* @media (min-width: 1281px) {
-  
-        .how-to-phone {
-          width: 50%;
-        }
-        .prev-how, .next-how {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 10px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-        .row-content {
-          display: flex;
-          flex-flow: nowrap;
-          flex-direction: column;
-        }
-        .site-headline {
-          font-size: 2rem;
-        }
-        .site-tagline {
-          font-size: 1rem;
-          color: black;
-          font-weight: 500;
-          padding-top: 30px;
-        }
-        .logo-section-container {
-          padding-top: 50px;
-          padding-left: 30px;
-        }
-        .logo-icon-k {
-          height: 20%;
-          width: 20%;
-          padding-top: 10px;
-        }
-        .logo-icon-kidlat {
-          height: 80%;
-          width: 50%;
-          padding-top: 10px;
-          padding-left: 20px;
-        }
-        .img-area-1 {
-          height: 200px;
-          width: 45vh;
-        }
-        .img-area-2 {
-          padding-left: 15px;
-          height: 200px;
-          width: 47vh;
-        }
-        .next-how {
-          margin-left: 410px;
-          border-radius: 3px 0 0 3px;
-        }
-        .prev-how {
-          margin-left: 0px;
-          border-radius: 3px 0 0 3px;
-        }
-        .item-services .item-inner {
-          display: flex;
-          flex-flow: nowrap;
-          flex-direction: row;
-        }
-        .item .item-inner h5 {
-          padding: 30px;
-          padding-top: 30px;
-        }
-        .item div {
-          padding-top: 30px;
-        }
-        
-      } */
       
-      /* 
-        ##Device = Laptops, Desktops
-        ##Screen = B/w 1025px to 1280px
-      */
-      
-      /* @media (min-width: 1025px) and (max-width: 1280px) {
-        
-        .how-to-phone {
-          width: 50%;
-        }
-        .prev-how, .next-how {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 10px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-        .row-content {
-          display: flex;
-          flex-flow: nowrap;
-          flex-direction: column;
-        }
-        .site-headline {
-          font-size: 2rem;
-        }
-        .site-tagline {
-          font-size: 1rem;
-          color: black;
-          font-weight: 500;
-          padding-top: 30px;
-        }
-        .logo-section-container {
-          padding-top: 50px;
-          padding-left: 30px;
-        }
-        .logo-icon-k {
-          height: 20%;
-          width: 20%;
-          padding-top: 10px;
-        }
-        .logo-icon-kidlat {
-          height: 80%;
-          width: 50%;
-          padding-top: 10px;
-          padding-left: 20px;
-        }
-        .img-area-1 {
-          height: 200px;
-          width: 45vh;
-        }
-        .img-area-2 {
-          padding-left: 15px;
-          height: 200px;
-          width: 47vh;
-        }
-        .next-how {
-          margin-left: 410px;
-          border-radius: 3px 0 0 3px;
-        }
-        .prev-how {
-          margin-left: 0px;
-          border-radius: 3px 0 0 3px;
-        }
-        .item-services .item-inner {
-          display: flex;
-          flex-flow: nowrap;
-          flex-direction: row;
-        }
-        .item .item-inner h5 {
-          padding: 30px;
-          padding-top: 30px;
-        }
-        .item div {
-          padding-top: 30px;
-        }
-        
-      }
-       */
-      /* 
-        ##Device = Tablets, Ipads (portrait)
-        ##Screen = B/w 768px to 1024px
-      */
-      
-      /* @media (min-width: 768px) and (max-width: 1024px) {
-        
-        .how-to-phone {
-          width: 50%;
-        }
-        .prev-how, .next-how {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 10px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-        .row-content {
-          display: flex;
-          flex-flow: nowrap;
-          flex-direction: column;
-        }
-        .site-headline {
-          font-size: 2rem;
-        }
-        .site-tagline {
-          font-size: 1rem;
-          color: black;
-          font-weight: 500;
-          padding-top: 30px;
-        }
-        .logo-section-container {
-          padding-top: 50px;
-          padding-left: 30px;
-        }
-        .logo-icon-k {
-          height: 20%;
-          width: 20%;
-          padding-top: 10px;
-        }
-        .logo-icon-kidlat {
-          height: 80%;
-          width: 50%;
-          padding-top: 10px;
-          padding-left: 20px;
-        }
-        .img-area-1 {
-          height: 200px;
-          width: 45vh;
-        }
-        .img-area-2 {
-          padding-left: 15px;
-          height: 200px;
-          width: 47vh;
-        }
-        .next-how {
-          margin-left: 410px;
-          border-radius: 3px 0 0 3px;
-        }
-        .prev-how {
-          margin-left: 0px;
-          border-radius: 3px 0 0 3px;
-        }
-        .item-services .item-inner {
-          display: flex;
-          flex-flow: nowrap;
-          flex-direction: row;
-        }
-        .item .item-inner h5 {
-          padding: 30px;
-          padding-top: 30px;
-        }
-        .item div {
-          padding-top: 30px;
-        }
-        
-      }
-      
-      /* 
-        ##Device = Tablets, Ipads (landscape)
-        ##Screen = B/w 768px to 1024px
-      */
-      
-      @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-        
-        .how-to-phone {
-          width: 50%;
-        }
-        .prev-how, .next-how {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 10px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-        .row-content {
-          display: flex;
-          flex-flow: nowrap;
-          flex-direction: column;
-        }
-        .site-headline {
-          font-size: 2rem;
-        }
-        .site-tagline {
-          font-size: 1rem;
-          color: black;
-          font-weight: 500;
-          padding-top: 30px;
-        }
-        .logo-section-container {
-          padding-top: 50px;
-          padding-left: 30px;
-        }
-        .logo-icon-k {
-          height: 20%;
-          width: 20%;
-          padding-top: 10px;
-        }
-        .logo-icon-kidlat {
-          height: 80%;
-          width: 50%;
-          padding-top: 10px;
-          padding-left: 20px;
-        }
-        .img-area-1 {
-          height: 200px;
-          width: 45vh;
-        }
-        .img-area-2 {
-          padding-left: 15px;
-          height: 200px;
-          width: 47vh;
-        }
-        .next-how {
-          margin-left: 410px;
-          border-radius: 3px 0 0 3px;
-        }
-        .prev-how {
-          margin-left: 0px;
-          border-radius: 3px 0 0 3px;
-        }
-        .item-services .item-inner {
-          display: flex;
-          flex-flow: nowrap;
-          flex-direction: row;
-        }
-        .item .item-inner h5 {
-          padding: 30px;
-          padding-top: 30px;
-        }
-        .item div {
-          padding-top: 30px;
-        }
-        
-      } 
-      
-      /* 
-        ##Device = Low Resolution Tablets, Mobiles (Landscape)
-        ##Screen = B/w 481px to 767px
-      */
-      
-      /* @media (min-width: 481px) and (max-width: 767px) {
-        
-        .how-to-phone{
-          width: 50%;
-        }
-        .prev-how, .next-how {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 10px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-        
-        .site-headline {
-          font-size: 1.5rem;
-          padding: 20px;
-        }
-        .faster-headline{
-          font-size: 1rem;
-          color: black;
-          font-weight: bold;
-          padding-top: 20px;
-        }
-    
-        .site-tagline {
-          font-size: 0.5rem;
-          color: black;
-          font-weight: 500;
-          padding-top: 30px;
-        }
-        
-        .logo-section-container{
-          padding-top: 50px;
-          padding-left: 30px;
-        }
-        .logo-icon-k{
-          height: 20%;
-          width: 20%;
-          padding-top: 10px;
-        }
-        .logo-icon-kidlat{
-          height: 80%;
-          width: 50%;
-          padding-top: 10px;
-          padding-left: 20px;
-        }
-        .img-area-1{
-          height: 150px;
-          width:35vh;
-        }
-        .img-area-2{
-          height: 150px;
-          width:38vh;
-        }
-        .next-how {
-          margin-left: 320px;
-          border-radius: 3px 0 0 3px;
-        }
-        .prev-how {
-          margin-left: 104px;
-          border-radius: 3px 0 0 3px;
-        }
-       
-        
-      } */
-      
-      /* 
-        ##Device = Most of the Smartphones Mobiles (Portrait)
-        ##Screen = B/w 320px to 479px
-      */
-      
-      /* @media (min-width: 320px) and (max-width: 480px) {
-        
-        .logo-section-container{
-          padding-top: 50px;
-          padding-left: 30px;
-        }
-        .logo-icon-k{
-          height: 30%;
-          width: 30%;
-          padding-top: 10px;
-        }
-        .logo-icon-kidlat{
-          height: 100%;
-          width: 70%;
-          padding-top: 10px;
-          padding-left: 20px;
-        }
-        .item .item-inner{
-          display: inline-flex;
-          padding: 30px;
-        }
-        .item .item-inner h5{
-          padding: 10px;
-          padding-top: 40px;
-        }
-        .img-area-1{
-          height: 200px;
-          width:45vh;
-        }
-        .img-area-2{
-          padding-left: 15px;
-          height: 200px;
-          width:47vh;
-        }
-        .next-how {
-          margin-left: 280px;
-          border-radius: 3px 0 0 3px;
-        }
-        .prev-how {
-          margin-left: 45px;
-          border-radius: 3px 0 0 3px;
-        }
-        
-      } */
-
-        /* @media only screen 
-        and (min-device-width: 320px) 
-        and (max-device-width: 480px)
-        and (-webkit-min-device-pixel-ratio: 2) {
-          .logo-section-container{
-            padding-top: 50px;
-            padding-left: 30px;
+        @media screen and (device-width: 320px) and (device-height: 480px) 
+        and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+          .hero-section .container{
+            display: inline;
+            
           }
-          .logo-icon-k{
-            height: 30%;
-            width: 30%;
-            padding-top: 10px;
-          }
-          .logo-icon-kidlat{
-            height: 100%;
-            width: 70%;
-            padding-top: 10px;
-            padding-left: 20px;
-          }
-          .item .item-inner{
-            display: inline-flex;
-            padding: 30px;
-          }
-          .item .item-inner h5{
-            padding: 10px;
-            padding-top: 40px;
-          }
-          .img-area-1{
-            height: 200px;
-            width:45vh;
-          }
-          .img-area-2{
-            padding-left: 15px;
-            height: 200px;
-            width:47vh;
-          }
-          .next-how {
-            margin-left: 280px;
-            border-radius: 3px 0 0 3px;
-          }
-          .prev-how {
-            margin-left: 45px;
-            border-radius: 3px 0 0 3px;
-          }
-          
-        }
-
-        @media only screen 
-        and (min-device-width: 768px) 
-        and (max-device-width: 1024px)
-        and (-webkit-min-device-pixel-ratio: 2) 
-        {
-
           .how-to-phone{
-            width: 80%;
+            width: 60%;
           }
+          .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 50%;
+        }
+          .faq {
+            height: 80px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .ans {
+            height: 120px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
           .prev-how, .next-how {
             cursor: pointer;
             position: absolute;
-            top: 50%;
+            top: 70%;
             width: auto;
             padding: 10px;
             margin-top: -22px;
@@ -10809,15 +10070,18 @@
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             user-select: none;
+          
           }
-          .row-content{
-            display: flex;
-            flex-flow: nowrap;
-            flex-direction: row;
-            
-          }
+          
           .site-headline {
             font-size: 2rem;
+            padding: 20px;
+          }
+          .faster-headline{
+            font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
+            padding-top: 20px;
           }
       
           .site-tagline {
@@ -10843,507 +10107,350 @@
             padding-left: 20px;
           }
           .img-area-1{
-            height: 200px;
-            width:45vh;
+            height: 150px;
+            width:27vh;
           }
           .img-area-2{
-            padding-left: 15px;
-            height: 200px;
-            width:47vh;
+            height: 150px;
+            width:30vh;
           }
           .next-how {
-            margin-left: 250px;
+            margin-left: 90px;
+            border-radius: 3px 0 0 3px;
+          }
+          .prev-how {
+            margin-left: -120px;
+            border-radius: 3px 0 0 3px;
+          }
+          .f3{
+            display: inline;
+          }
+  
+          .f23{
+            display: inline;
+          }
+  
+          .last-2{
+            display: inline;
+          }
+          .last-2 .card-body{
+            width: 50%;
+          }
+         
+        }
+       
+      
+        @media only screen 
+        and (min-device-width: 360px) 
+        and (max-device-width: 640px)  {
+          .hero-section .container{
+            display: inline;
+            
+          }
+          .how-to-phone{
+            width: 60%;
+          }
+          .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 50%;
+        }
+          .faq {
+            height: 80px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .ans {
+            height: 120px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .prev-how, .next-how {
+            cursor: pointer;
+            position: absolute;
+            top: 60%;
+            width: auto;
+            padding: 10px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            
+          
+          }
+          
+          .site-headline {
+            font-size: 2rem;
+            padding: 20px;
+          }
+          .faster-headline{
+            font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
+            padding-top: 20px;
+          }
+      
+          .site-tagline {
+            font-size: 1rem;
+            color: black;
+            font-weight: 500;
+            padding-top: 30px;
+          }
+          
+          .logo-section-container{
+            padding-top: 50px;
+            padding-left: 30px;
+          }
+          .logo-icon-k{
+            height: 20%;
+            width: 20%;
+            padding-top: 10px;
+          }
+          .logo-icon-kidlat{
+            height: 80%;
+            width: 50%;
+            padding-top: 10px;
+            padding-left: 20px;
+          }
+          .img-area-1{
+            height: 150px;
+            width:27vh;
+          }
+          .img-area-2{
+            height: 150px;
+            width:30vh;
+          }
+          .next-how {
+            margin-left: 90px;
+            border-radius: 3px 0 0 3px;
+          }
+          .prev-how {
+            margin-left: -120px;
+            border-radius: 3px 0 0 3px;
+          }
+          .f3{
+            display: inline;
+          }
+  
+          .f23{
+            display: inline;
+          }
+  
+          .last-2{
+            display: inline;
+          }
+          .last-2 .card-body{
+            width: 50%;
+          }
+         
+        }
+        @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 568px)  {
+          .hero-section .container{
+            display: inline;
+            
+          }
+          .how-to-phone{
+            width: 60%;
+          }
+          .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 50%;
+        }
+          .faq {
+            height: 80px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .ans {
+            height: 120px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .prev-how, .next-how {
+            cursor: pointer;
+            position: absolute;
+            top: 60%;
+            width: auto;
+            padding: 10px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+           
+          
+          }
+          
+          .site-headline {
+            font-size: 2rem;
+            padding: 20px;
+          }
+          .faster-headline{
+            font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
+            padding-top: 20px;
+          }
+      
+          .site-tagline {
+            font-size: 1rem;
+            color: black;
+            font-weight: 500;
+            padding-top: 30px;
+          }
+          
+          .logo-section-container{
+            padding-top: 50px;
+            padding-left: 30px;
+          }
+          .logo-icon-k{
+            height: 20%;
+            width: 20%;
+            padding-top: 10px;
+          }
+          .logo-icon-kidlat{
+            height: 80%;
+            width: 50%;
+            padding-top: 10px;
+            padding-left: 20px;
+          }
+          .img-area-1{
+            height: 150px;
+            width:27vh;
+          }
+          .img-area-2{
+            height: 150px;
+            width:30vh;
+          }
+          .next-how {
+            margin-left: 90px;
+            border-radius: 3px 0 0 3px;
+          }
+          .prev-how {
+            margin-left: -120px;
+            border-radius: 3px 0 0 3px;
+          }
+          .f3{
+            display: inline;
+          }
+  
+          .f23{
+            display: inline;
+          }
+  
+          .last-2{
+            display: inline;
+          }
+          .last-2 .card-body{
+            width: 50%;
+          }
+         
+        }
+       
+        @media only screen 
+        and (min-device-width: 800px) 
+        and (max-device-width: 1280px)  {
+         
+          .how-to-phone {
+            width: 70%;
+          }
+          .hero-section .container{
+            display: flex;
+            
+          }
+          .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 100%;
+        }
+        
+          .prev-how, .next-how {
+            cursor: pointer;
+            position: absolute;
+            top: 30%;
+            width: auto;
+            padding: 10px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          }
+          .row-content {
+            display: flex;
+            flex-flow: nowrap;
+            flex-direction: column;
+          }
+          .site-headline {
+            font-size: 2rem;
+          }
+          .site-tagline {
+            font-size: 1rem;
+            color: black;
+            font-weight: 500;
+            padding-top: 30px;
+          }
+          .logo-section-container {
+            padding-top: 50px;
+            padding-left: 30px;
+          }
+          .logo-icon-k {
+            height: 20%;
+            width: 20%;
+            padding-top: 10px;
+          }
+          .logo-icon-kidlat {
+            height: 80%;
+            width: 50%;
+            padding-top: 10px;
+            padding-left: 20px;
+          }
+          .img-area-1 {
+            height: 200px;
+            width: 45vh;
+          }
+          .img-area-2 {
+            padding-left: 15px;
+            height: 200px;
+            width: 47vh;
+          }
+          .next-how {
+            margin-left: 220px;
             border-radius: 3px 0 0 3px;
           }
           .prev-how {
             margin-left: 0px;
             border-radius: 3px 0 0 3px;
           }
-          .item-services .item-inner{
-            display: flex;
-            flex-flow: nowrap;
-            flex-direction: row;
-          }
-          .item .item-inner h5{
-            padding: 30px;
-            padding-top: 30px;
-          }
-          .item div{
-            padding-top: 30px;
-          }
-        }
-
-        @media only screen 
-        and (min-device-width: 540px) 
-        and (max-device-width: 720px)
-        and (-webkit-min-device-pixel-ratio: 1) {
-
-          .how-to-phone{
-            width: 50%;
-          }
-          .prev-how, .next-how {
-            cursor: pointer;
-            position: absolute;
-            top: 62%;
-            width: auto;
-            padding: 10px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-          }
-          .row-content{
-            display: flex;
-            flex-flow: nowrap;
-            flex-direction: column;
-            
-          }
-          .site-headline {
-            font-size: 2.5rem;
-            padding: 20px;
-          }
-      
-          .site-tagline {
-            font-size: 1rem;
-            color: black;
-            font-weight: 500;
-            padding-top: 30px;
-          }
           
-          .logo-section-container{
-            padding-top: 50px;
-            padding-left: 30px;
-          }
-          .logo-icon-k{
-            height: 20%;
-            width: 20%;
-            padding-top: 10px;
-          }
-          .logo-icon-kidlat{
-            height: 80%;
-            width: 50%;
-            padding-top: 10px;
-            padding-left: 20px;
-          }
-          .img-area-1{
-            height: 200px;
-            width:45vh;
-          }
-          .img-area-2{
-            padding-left: 5px;
-            height: 200px;
-            width:45vh;
-          }
-          .next-how {
-            margin-left: 370px;
-            border-radius: 3px 0 0 3px;
-          }
-          .prev-how {
-            margin-left: 130px;
-            border-radius: 3px 0 0 3px;
-          }
-          .item-services .item-inner{
-            display: flex;
-            flex-flow: nowrap;
-            flex-direction: row;
-          }
-          .item .item-inner h5{
-            padding: 30px;
-            padding-top: 30px;
-          }
-          .item div{
-            padding-top: 30px;
-          }
+       
+     
         }
-
-
-        @media only screen 
-        and (min-device-width: 280px) 
-        and (max-device-width: 653px)
-        and (-webkit-min-device-pixel-ratio: 1)  {
-
-          .how-to-phone{
-            width: 50%;
-          }
-          .prev-how, .next-how {
-            cursor: pointer;
-            position: absolute;
-            top: 42%;
-            width: auto;
-            padding: 10px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-          }
-        
-          .site-headline {
-            font-size: 1.5rem;
-            padding: 20px;
-          }
-          .faster-headline{
-            font-size: 1rem;
-            color: black;
-            font-weight: bold;
-            padding-top: 20px;
-          }
-      
-          .site-tagline {
-            font-size: 0.5rem;
-            color: black;
-            font-weight: 500;
-            padding-top: 30px;
-          }
-          
-          .logo-section-container{
-            padding-top: 50px;
-            padding-left: 30px;
-          }
-          .logo-icon-k{
-            height: 20%;
-            width: 20%;
-            padding-top: 10px;
-          }
-          .logo-icon-kidlat{
-            height: 80%;
-            width: 50%;
-            padding-top: 10px;
-            padding-left: 20px;
-          }
-          .img-area-1{
-            height: 100px;
-            width:25vh;
-          }
-          .img-area-2{
-            padding-left: 1px;
-            height: 100px;
-            width:25vh;
-          }
-          .next-how {
-            margin-left: 190px;
-            border-radius: 3px 0 0 3px;
-          }
-          .prev-how {
-            margin-left: 52px;
-            border-radius: 3px 0 0 3px;
-          }
-        
-          
-        } 
-
-        @media only screen 
-        and (min-device-width: 360px) 
-        and (max-device-width: 640px)
-        and (-webkit-min-device-pixel-ratio: 1)  {
-
-          .how-to-phone{
-            width: 50%;
-          }
-          .prev-how, .next-how {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 10px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-          }
-          
-          .site-headline {
-            font-size: 1.5rem;
-            padding: 20px;
-          }
-          .faster-headline{
-            font-size: 1rem;
-            color: black;
-            font-weight: bold;
-            padding-top: 20px;
-          }
-      
-          .site-tagline {
-            font-size: 0.5rem;
-            color: black;
-            font-weight: 500;
-            padding-top: 30px;
-          }
-          
-          .logo-section-container{
-            padding-top: 50px;
-            padding-left: 30px;
-          }
-          .logo-icon-k{
-            height: 20%;
-            width: 20%;
-            padding-top: 10px;
-          }
-          .logo-icon-kidlat{
-            height: 80%;
-            width: 50%;
-            padding-top: 10px;
-            padding-left: 20px;
-          }
-          .img-area-1{
-            height: 150px;
-            width:35vh;
-          }
-          .img-area-2{
-            padding-left: 15px;
-            height: 150px;
-            width:38vh;
-          }
-          .next-how {
-            margin-left: 250px;
-            border-radius: 3px 0 0 3px;
-          }
-          .prev-how {
-            margin-left: 73px;
-            border-radius: 3px 0 0 3px;
-          }
-        
-        
-      } 
-
-      @media only screen 
-      and (min-device-width: 320px) 
-      and (max-device-width: 480px)
-      and (-webkit-min-device-pixel-ratio: 1)  {
-
-        .how-to-phone{
-          width: 50%;
-        }
-        .prev-how, .next-how {
-          cursor: pointer;
-          position: absolute;
-          top: 65%;
-          width: auto;
-          padding: 10px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-      
-        .site-headline {
-          font-size: 1.5rem;
-          padding: 20px;
-        }
-        .faster-headline{
-          font-size: 1rem;
-          color: black;
-          font-weight: bold;
-          padding-top: 20px;
-        }
-    
-        .site-tagline {
-          font-size: 0.5rem;
-          color: black;
-          font-weight: 500;
-          padding-top: 30px;
-        }
-        
-        .logo-section-container{
-          padding-top: 50px;
-          padding-left: 30px;
-        }
-        .logo-icon-k{
-          height: 20%;
-          width: 20%;
-          padding-top: 10px;
-        }
-        .logo-icon-kidlat{
-          height: 80%;
-          width: 50%;
-          padding-top: 10px;
-          padding-left: 20px;
-        }
-        .img-area-1{
-          height: 150px;
-          width:35vh;
-        }
-        .img-area-2{
-          padding-left: 15px;
-          height: 150px;
-          width:38vh;
-        }
-        .next-how {
-          margin-left: 220px;
-          border-radius: 3px 0 0 3px;
-        }
-        .prev-how {
-          margin-left: 68px;
-          border-radius: 3px 0 0 3px;
-        }
-        .item-services .item-inner{
-          display: inline;
-          flex-flow: nowrap;
-          flex-direction: row;
-          justify-items: center;
-        }
-        .item-inner img{
-          margin-left: 60px;
-        }
-      
-        
-      }  */
-
-        /* 
-      @media only screen 
-      and (min-device-width: 360px) 
-      and (max-device-width: 640px)  {
-
-      .how-to-phone{
-        width: 50%;
-      }
-      .prev-how, .next-how {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 10px;
-        margin-top: -22px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-      }
-      
-      .site-headline {
-        font-size: 1.5rem;
-        padding: 20px;
-      }
-      .faster-headline{
-        font-size: 1rem;
-        color: black;
-        font-weight: bold;
-        padding-top: 20px;
-      }
-  
-      .site-tagline {
-        font-size: 0.5rem;
-        color: black;
-        font-weight: 500;
-        padding-top: 30px;
-      }
-      
-      .logo-section-container{
-        padding-top: 50px;
-        padding-left: 30px;
-      }
-      .logo-icon-k{
-        height: 20%;
-        width: 20%;
-        padding-top: 10px;
-      }
-      .logo-icon-kidlat{
-        height: 80%;
-        width: 50%;
-        padding-top: 10px;
-        padding-left: 20px;
-      }
-      .img-area-1{
-        height: 150px;
-        width:35vh;
-      }
-      .img-area-2{
-        height: 150px;
-        width:38vh;
-      }
-      .next-how {
-        margin-left: 280px;
-        border-radius: 3px 0 0 3px;
-      }
-      .prev-how {
-        margin-left: 94px;
-        border-radius: 3px 0 0 3px;
-      }
-      .item-services .item-inner{
-        display: inline;
-        flex-flow: nowrap;
-        flex-direction: row;
-        justify-items: center;
-      }
-      .item-inner img{
-        margin-left: 110px;
-      }
-      
-      
-    } 
-
-    */
-
-    /* merchant css */
-    .custom-select {
-      position: relative;
-      font-family: Arial;
-    }
-    
-    .custom-select select {
-      display: none; /*hide original SELECT element:*/
-    }
-    
-    .select-selected {
-      background-color: DodgerBlue;
-    }
-    
-    /*style the arrow inside the select element:*/
-    .select-selected:after {
-      position: absolute;
-      content: "";
-      top: 14px;
-      right: 10px;
-      width: 0;
-      height: 0;
-      border: 6px solid transparent;
-      border-color: #fff transparent transparent transparent;
-    }
-    
-    /*point the arrow upwards when the select box is open (active):*/
-    .select-selected.select-arrow-active:after {
-      border-color: transparent transparent #fff transparent;
-      top: 7px;
-    }
-    
-    /*style the items (options), including the selected item:*/
-    .select-items div,.select-selected {
-      color: #ffffff;
-      padding: 8px 16px;
-      border: 1px solid transparent;
-      border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-      cursor: pointer;
-      user-select: none;
-    }
-    
-    /*style items (options):*/
-    .select-items {
-      position: absolute;
-      background-color: DodgerBlue;
-      top: 100%;
-      left: 0;
-      right: 0;
-      z-index: 99;
-    }
-    
-    /*hide the items when the select box is closed:*/
-    .select-hide {
-      display: none;
-    }
-    
-    .select-items div:hover, .same-as-selected {
-      background-color: rgba(0, 0, 0, 0.1);
-    }
+       
