@@ -9863,7 +9863,7 @@
           .prev-how, .next-how {
             cursor: pointer;
             position: absolute;
-            top: 40%;
+            top: 60%;
             width: auto;
             padding: 10px;
             margin-top: -22px;
@@ -9939,7 +9939,7 @@
             display: inline;
           }
           .last-2 .card-body{
-            width: 50%;
+            width: 70%;
           }
         }
         
