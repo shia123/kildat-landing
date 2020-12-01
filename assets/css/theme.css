@@ -9758,6 +9758,7 @@
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             user-select: none;
+            background-color: blue;
             
           
           }
@@ -9872,6 +9873,7 @@
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             user-select: none;
+            background-color: pink;
             
           
           }
@@ -9972,6 +9974,7 @@
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             user-select: none;
+            background-color:violet;
           }
           .row-content {
             display: flex;
@@ -10070,6 +10073,7 @@
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             user-select: none;
+            background-color: green;
           }
           .row-content {
             display: flex;
