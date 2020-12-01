@@ -9974,7 +9974,7 @@
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             user-select: none;
-          
+            
           }
           .row-content {
             display: flex;
@@ -10011,7 +10011,7 @@
           }
           .img-area-2 {
             height: 20%;
-            width:39.1%;
+            width:51.1%;
           }
           .next-how {
             margin-left: 220px;
@@ -10072,7 +10072,7 @@
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             user-select: none;
-           
+            background-color: green;
           }
           .row-content {
             display: flex;
