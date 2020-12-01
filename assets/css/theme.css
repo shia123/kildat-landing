@@ -9863,7 +9863,7 @@
           .prev-how, .next-how {
             cursor: pointer;
             position: absolute;
-            top: 60%;
+            top: 40%;
             width: auto;
             padding: 10px;
             margin-top: -22px;
@@ -9964,7 +9964,7 @@
           .prev-how, .next-how {
             cursor: pointer;
             position: absolute;
-            top: 70%;
+            top: 40%;
             width: auto;
             padding: 10px;
             margin-top: -22px;
@@ -10036,7 +10036,7 @@
             display: flex;
           }
           .last-2 .card-body{
-            width: 70%;
+            width: 50%;
           }
           
         
