@@ -160,42 +160,46 @@
 		<div class="container">
 
 			<div class="screen-app">
-				<div class="how-to">
-
+			
+				<div class="test">
+					<a class="prev-how" onclick="howPlus(-1)" >&#10094;</a>
 					<img src="./assets/images/howto/1.png" class="how-to-phone" />
-
+					<a class="next-how" onclick="currentPlus(1)">&#10095;</a>
 				</div>
-				<div class="how-to">
-
+				<div class="test">
+					<a class="prev-how" onclick="howPlus(-1)" >&#10094;</a>
 					<img src="./assets/images/howto/2.png" class="how-to-phone" />
-
+					<a class="next-how" onclick="currentPlus(1)">&#10095;</a>
 				</div>
-				<div class="how-to">
-
+				<div class="test">
+					<a class="prev-how" onclick="howPlus(-1)" >&#10094;</a>
 					<img src="./assets/images/howto/3.png" class="how-to-phone" />
-
+					<a class="next-how" onclick="currentPlus(1)">&#10095;</a>
 				</div>
 
-				<div class="how-to">
-
+				<div class="test">
+					<a class="prev-how" onclick="howPlus(-1)" >&#10094;</a>
 					<img src="./assets/images/howto/4.png" class="how-to-phone" />
+					<a class="next-how" onclick="currentPlus(1)">&#10095;</a>
 
 				</div>
 
-				<div class="how-to">
-
+				<div class="test">
+					<a class="prev-how" onclick="howPlus(-1)" >&#10094;</a>
 					<img src="./assets/images/howto/5.png" class="how-to-phone" />
+					<a class="next-how" onclick="currentPlus(1)">&#10095;</a>
 
 				</div>
-				<div class="how-to">
-
+				<div class="test">
+					<a class="prev-how" onclick="howPlus(-1)" >&#10094;</a>
 					<img src="./assets/images/howto/6.png" class="how-to-phone" />
+					<a class="next-how" onclick="currentPlus(1)">&#10095;</a>
 
 				</div>
 			</div>
 
-			<a class="prev-how" onclick="howPlus(-1)">&#10094;</a>
-			<a class="next-how" onclick="currentPlus(1)">&#10095;</a>
+			<!-- <a class="prev-how" onclick="howPlus(-1)">&#10094;</a>
+			<a class="next-how" onclick="currentPlus(1)">&#10095;</a> -->
 			<div class="col-12 col-md-6 content-cont ">
 				<h1 class="site-headline font-weight-bold mt-lg-5 ">Kidlat Delivery</h2>
 					<h2 class="faster-headline">Faster than you
@@ -300,45 +304,45 @@
 						<img class="mb-3 card-body" src="assets/images/category/kusina.png" alt="" />
 					</div>
 
-				
 
 
-				<div class="item-inner ">
-					<img class="mb-3 card-body" src="assets/images/category/palengke.png" alt="" />
+
+					<div class="item-inner ">
+						<img class="mb-3 card-body" src="assets/images/category/palengke.png" alt="" />
+					</div>
+
+
+
+
+					<div class="item-inner  ">
+						<img class="mb-3 card-body" src="assets/images/category/grocery.png" alt="" />
+					</div>
+
+
 				</div>
 
+				<div class="last-2">
+					<div class="item-inner ">
+						<img class="mb-3 card-body" src="assets/images/category/shop.png" alt="" />
+					</div>
 
 
 
-				<div class="item-inner  ">
-					<img class="mb-3 card-body" src="assets/images/category/grocery.png" alt="" />
+
+					<div class="item-inner  ">
+						<img class="mb-3 card-body" src="assets/images/category/services.png" alt="" />
+
+					</div>
+
 				</div>
 
 
 			</div>
 
-			<div class="last-2">
-				<div class="item-inner ">
-					<img class="mb-3 card-body" src="assets/images/category/shop.png" alt="" />
-				</div>
-			
-
-			
-
-				<div class="item-inner  ">
-					<img class="mb-3 card-body" src="assets/images/category/services.png" alt="" />
-
-				</div>
-
+			<!--//row-->
+			<div class="pt-3 text-center">
+				<a class="btn btn-ghost   font-weight-bold" href="faq.html">Frequently Asked Questions</a>
 			</div>
-
-
-		</div>
-
-		<!--//row-->
-		<div class="pt-3 text-center">
-			<a class="btn btn-ghost   font-weight-bold" href="faq.html">Frequently Asked Questions</a>
-		</div>
 		</div>
 
 	</section>
@@ -554,7 +558,7 @@
 
 		function showHow(n) {
 			var i;
-			var phoneSlide = document.getElementsByClassName("how-to");
+			var phoneSlide = document.getElementsByClassName("test");
 			if (n > phoneSlide.length) { howIndex = 1 }
 			if (n < 1) { howIndex = phoneSlide.length }
 			for (i = 0; i < phoneSlide.length; i++) {
