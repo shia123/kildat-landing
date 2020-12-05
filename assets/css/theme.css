@@ -9745,6 +9745,12 @@
             background-image: linear-gradient(#fddb3a, #fff48f);
           }
   
+          .ans-rates {
+            height: 220px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
           .test{
             display: inline;
           }
@@ -9839,6 +9845,13 @@
             display: inline;
             
           }
+          .ans-rates {
+            height: 220px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+
           .how-to-phone{
             width: 60%;
           }
@@ -9956,6 +9969,12 @@
             display: flex;
             
           }
+          .ans-rates {
+            height: 220px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
          
           .card-body {
             flex: 1 1 auto;
@@ -10062,6 +10081,12 @@
             transition: 0.3s;
             width: 100%;
         }
+        .ans-rates {
+          height: 220px;
+          width: 100%;
+          background: #efce3d;
+          background-image: linear-gradient(#fddb3a, #fff48f);
+        }
         
           .prev-how, .next-how {
             cursor: pointer;
@@ -10153,7 +10178,12 @@
             transition: 0.3s;
             width: 93%;
         }
-        
+        .ans-rates {
+          height: 220px;
+          width: 100%;
+          background: #efce3d;
+          background-image: linear-gradient(#fddb3a, #fff48f);
+        }
           .prev-how, .next-how {
             cursor: pointer;
             position: static;
