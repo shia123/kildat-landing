@@ -9714,6 +9714,7 @@
           width: 70%;
         }
         
+        
         @media only screen and (max-width: 600px) {
 
           .hero-section .container{
@@ -9746,11 +9747,16 @@
           }
   
           .ans-rates {
-            height: 220px;
+            height: 360px;
             width: 100%;
             background: #efce3d;
             background-image: linear-gradient(#fddb3a, #fff48f);
+            
           }
+          .list-rates li{
+            color: black;
+            margin-left: 30px;
+           }
           .test{
             display: inline;
           }
@@ -9846,11 +9852,16 @@
             
           }
           .ans-rates {
-            height: 220px;
+            height: 310px;
             width: 100%;
             background: #efce3d;
             background-image: linear-gradient(#fddb3a, #fff48f);
+            
           }
+          .list-rates li{
+            color: black;
+            margin-left: 60px;
+           }
 
           .how-to-phone{
             width: 60%;
@@ -9894,6 +9905,7 @@
             
           
           }
+          
           
           .site-headline {
             font-size: 2rem;
@@ -9974,7 +9986,12 @@
             width: 100%;
             background: #efce3d;
             background-image: linear-gradient(#fddb3a, #fff48f);
+            
           }
+          .list-rates li{
+            color: black;
+            margin-left: 190px;
+           }
          
           .card-body {
             flex: 1 1 auto;
@@ -10086,7 +10103,12 @@
           width: 100%;
           background: #efce3d;
           background-image: linear-gradient(#fddb3a, #fff48f);
+          
         }
+        .list-rates li{
+          color: black;
+          margin-left: 190px;
+         }
         
           .prev-how, .next-how {
             cursor: pointer;
@@ -10183,7 +10205,15 @@
           width: 100%;
           background: #efce3d;
           background-image: linear-gradient(#fddb3a, #fff48f);
+          
+          
         }
+        .list-rates li{
+          color: black;
+          margin-left: 190px;
+         }
+      
+        
           .prev-how, .next-how {
             cursor: pointer;
             position: static;
