@@ -1,5 +1,5 @@
         /*! * Bootstrap v4.4.1 (https://getbootstrap.com/) * Copyright 2011-2019 The Bootstrap Authors * Copyright 2011-2019 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
         :root {
           --blue: #007bff;
           --indigo: #6610f2;
@@ -4201,10 +4201,10 @@
           border-radius: 0.25rem;
         }
        
-        .card-body:hover{
-          width: 100%;
+        
+        .card-body:hover {
+          box-shadow: 20px 50px 36px 0 rgba(0,0,0,0.2);
         }
-       
 
         .card>hr {
           margin-right: 0;
@@ -4225,9 +4225,9 @@
           flex: 1 1 auto;
           min-height: 1px;
           padding: 1.25rem;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
           transition: 0.3s;
           width: 100%;
-          box-shadow: 20px 100px 156px 0 rgba(0,0,0,0.2);
           
         }
 
@@ -9097,7 +9097,7 @@
         }
 
         .theme-bg-primary {
-          background-color: #01060af3;
+          background-color: #eff2f5;
         }
 
         .theme-bg-secondary {
@@ -9452,7 +9452,7 @@
           padding: 20px;
         }
 
-        /* .prev-how, .next-how {
+        .prev-how, .next-how {
           cursor: pointer;
           position: absolute;
           top: 60%;
@@ -9470,13 +9470,13 @@
         .next-how {
           margin-left: 300px;
           border-radius: 3px 0 0 3px;
-        } */
+        }
 
         /* On hover, add a black background color with a little bit see-through */
 
-        /* .prev-how:hover, .next-how:hover {
+        .prev-how:hover, .next-how:hover {
           background-color: rgba(0, 0, 0, 0.8);
-        } */
+        }
 
         .cities {
           display: inline;
@@ -9538,13 +9538,10 @@
         }
 
         .category {
-          display: flex;
-          margin: 10px;
+          display: inline;
         }
-        .category .btn-unclick{
-          margin:10px;
-        }
-        .categ-label {
+
+        .category label {
           padding: 20px;
           font-size: 1.5rem;
           align-content: center;
@@ -9591,7 +9588,7 @@
           border-color: #efce3d;
         }
 
-        /* .logo-icon-k {
+        .logo-icon-k {
           height: 15%;
           width: 15%;
           padding-top: 30px;
@@ -9602,7 +9599,7 @@
           width: 50%;
           padding-top: 30px;
           padding-left: 40px;
-        } */
+        }
 
         .logo-section-container {
           padding-left: 3in;
@@ -9716,265 +9713,9 @@
         .last-2 .card-body{
           width: 70%;
         }
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-device-width: 768px)  and (orientation: portrait) {
+          
 
-          .hero-section .container{
-            display: inline;
-            
-          }
-          .how-to-phone{
-            width: 60%;
-          }
-          .card-body {
-            flex: 1 1 auto;
-            min-height: 1px;
-            padding: 1.25rem;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-            width: 50%;
-        }
-          .faq {
-            height: 80px;
-            width: 100%;
-            background: #efce3d;
-            background-image: linear-gradient(#fddb3a, #fff48f);
-          }
-  
-          .ans {
-            height: 120px;
-            width: 100%;
-            background: #efce3d;
-            background-image: linear-gradient(#fddb3a, #fff48f);
-          }
-  
-          .ans-rates {
-            height: 360px;
-            width: 100%;
-            background: #efce3d;
-            background-image: linear-gradient(#fddb3a, #fff48f);
-            
-          }
-          .list-rates li{
-            color: black;
-            margin-left: 30px;
-           }
-          .test{
-            display: inline;
-          }
-          .prev-how, .next-how {
-            cursor: pointer;
-            position: static;
-            margin-top: 300px;
-            width: auto;
-            padding: 10px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            
-            
-          
-          }
-          
-          .site-headline {
-            font-size: 2rem;
-            padding: 20px;
-          }
-          .faster-headline{
-            font-size: 1.5rem;
-            color: black;
-            font-weight: bold;
-            padding-top: 20px;
-          }
-      
-          .site-tagline {
-            font-size: 1rem;
-            color: black;
-            font-weight: 500;
-            padding-top: 30px;
-          }
-          
-          .logo-section-container{
-            padding-top: 50px;
-            padding-left: 30px;
-          }
-          .logo-icon-k{
-            height: 20%;
-            width: 20%;
-            padding-top: 10px;
-          }
-          .logo-icon-kidlat{
-            height: 80%;
-            width: 50%;
-            padding-top: 10px;
-            padding-left: 20px;
-          }
-          .img-area-1{
-            height: 50%;
-            width:100%;
-          }
-          .img-area-2{
-            height: 50%;
-            width:100%;
-          }
-          .next-how {
-            margin-left: 20px;
-            border-radius: 3px 0 0 3px;
-       
-          }
-          .prev-how {
-            margin-left: 10px;
-            border-radius: 3px 0 0 3px;
-          
-          }
-          .f3{
-            display: inline;
-          }
-  
-          .f23{
-            display: inline;
-          }
-  
-          .last-2{
-            display: inline;
-          }
-          .last-2 .card-body{
-            width: 50%;
-          }
-
-        }
-
-        /* Small devices (portrait tablets and large phones, 600px and up) */
-        @media only screen and (min-width: 600px) {
-          .hero-section .container{
-            display: inline;
-            
-          }
-          .ans-rates {
-            height: 310px;
-            width: 100%;
-            background: #efce3d;
-            background-image: linear-gradient(#fddb3a, #fff48f);
-            
-          }
-          .list-rates li{
-            color: black;
-            margin-left: 60px;
-           }
-
-          .how-to-phone{
-            width: 60%;
-          }
-          .card-body {
-            flex: 1 1 auto;
-            min-height: 1px;
-            padding: 1.25rem;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-            width: 50%;
-        }
-          .faq {
-            height: 80px;
-            width: 100%;
-            background: #efce3d;
-            background-image: linear-gradient(#fddb3a, #fff48f);
-          }
-  
-          .ans {
-            height: 120px;
-            width: 100%;
-            background: #efce3d;
-            background-image: linear-gradient(#fddb3a, #fff48f);
-          }
-  
-          .prev-how, .next-how {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 10px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            
-            
-          
-          }
-          
-          
-          .site-headline {
-            font-size: 2rem;
-            padding: 20px;
-          }
-          .faster-headline{
-            font-size: 1.5rem;
-            color: black;
-            font-weight: bold;
-            padding-top: 20px;
-          }
-      
-          .site-tagline {
-            font-size: 1rem;
-            color: black;
-            font-weight: 500;
-            padding-top: 30px;
-          }
-          
-          .logo-section-container{
-            padding-top: 50px;
-            padding-left: 30px;
-          }
-          .logo-icon-k{
-            height: 20%;
-            width: 20%;
-            padding-top: 10px;
-          }
-          .logo-icon-kidlat{
-            height: 80%;
-            width: 50%;
-            padding-top: 10px;
-            padding-left: 20px;
-          }
-          .img-area-1{
-            height: 30%;
-            width:50%;
-          }
-          .img-area-2{
-            height: 30%;
-            width:50%;
-          }
-          .next-how {
-            margin-left: 90px;
-            border-radius: 3px 0 0 3px;
-          }
-          .prev-how {
-            margin-left: -120px;
-            border-radius: 3px 0 0 3px;
-          }
-          .f3{
-            display: inline;
-          }
-  
-          .f23{
-            display: inline;
-          }
-  
-          .last-2{
-            display: inline;
-          }
-          .last-2 .card-body{
-            width: 50%;
-          }
-        }
-        
-        /* Medium devices (landscape tablets, 768px and up) */
-        @media only screen and (min-width: 768px) {
           .how-to-phone {
             width: 70%;
           }
@@ -9982,18 +9723,6 @@
             display: flex;
             
           }
-          .ans-rates {
-            height: 220px;
-            width: 100%;
-            background: #efce3d;
-            background-image: linear-gradient(#fddb3a, #fff48f);
-            
-          }
-          .list-rates li{
-            color: black;
-            margin-left: 190px;
-           }
-         
           .card-body {
             flex: 1 1 auto;
             min-height: 1px;
@@ -10002,119 +9731,11 @@
             transition: 0.3s;
             width: 100%;
         }
-        .test{
-          display: flex;
-        }
-        
-          .prev-how, .next-how {
-            cursor: pointer;
-            position: static;
-            margin-top: 100px;
-            width: auto;
-            padding: 10px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-          
-            
-          }
-         
-          .site-headline {
-            font-size: 2rem;
-          }
-          .site-tagline {
-            font-size: 1rem;
-            color: black;
-            font-weight: 500;
-            padding-top: 30px;
-          }
-          .logo-section-container {
-            padding-top: 50px;
-            padding-left: 30px;
-          }
-          .logo-icon-k {
-            height: 20%;
-            width: 20%;
-            padding-top: 10px;
-          }
-          .logo-icon-kidlat {
-            height: 80%;
-            width: 50%;
-            padding-top: 10px;
-            padding-left: 20px;
-          }
-          .img-area-1 {
-            height: 30%;
-            width: 60%;
-          }
-          .img-area-2 {
-            height: 30%;
-            width:60%;
-          }
-          .next-how {
-            margin-left: 5px;
-            border-radius: 3px 0 0 3px;
-          }
-          .prev-how {
-            margin-left: 10px;
-            border-radius: 3px 0 0 3px;
-            
-          }
-          
-          .f3{
-            display: flex;
-          }
-  
-          .f23{
-            display: flex;
-          }
-  
-          .last-2{
-            display: flex;
-          }
-          .last-2 .card-body{
-            width: 65%;
-          }
-          
-        
-        }
-        
-        /* Large devices (laptops/desktops, 992px and up) */
-        @media only screen and (min-width: 992px) {
-          .how-to-phone {
-            width: 50%;
-          }
-          .hero-section .container{
-            display: flex;
-            
-          }
-          .card-body {
-            flex: 1 1 auto;
-            min-height: 1px;
-            padding: 1.25rem;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-            width: 100%;
-        }
-        .ans-rates {
-          height: 220px;
-          width: 100%;
-          background: #efce3d;
-          background-image: linear-gradient(#fddb3a, #fff48f);
-          
-        }
-        .list-rates li{
-          color: black;
-          margin-left: 190px;
-         }
         
           .prev-how, .next-how {
             cursor: pointer;
             position: absolute;
-            top: 30%;
+            top: 40%;
             width: auto;
             padding: 10px;
             margin-top: -22px;
@@ -10124,7 +9745,6 @@
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             user-select: none;
-            
           }
           .row-content {
             display: flex;
@@ -10156,45 +9776,725 @@
             padding-left: 20px;
           }
           .img-area-1 {
-            height: 50%;
-            width: 100%;
+            height: 200px;
+            width: 45vh;
           }
           .img-area-2 {
-            height: 50%;
-            width: 100%;
+            padding-left: 15px;
+            height: 200px;
+            width: 47vh;
           }
           .next-how {
-            margin-left: 208px;
+            margin-left: 220px;
             border-radius: 3px 0 0 3px;
           }
           .prev-how {
-            margin-left: -5px;
+            margin-left: 0px;
             border-radius: 3px 0 0 3px;
           }
+          
+       
+     
+        }
 
-          .last-2 .card-body{
-            width: 65%;
+        
+        @media screen and (device-width: 375px) and (device-height: 667px) 
+        and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+          .hero-section .container{
+            display: inline;
+            
+          }
+          .how-to-phone{
+            width: 60%;
+          }
+          .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 50%;
+        }
+          .faq {
+            height: 80px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .ans {
+            height: 120px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
           }
           
-        }
-        
-        /* Extra large devices (large laptops and desktops, 1200px and up) */
-        @media only screen and (min-width: 1200px) {
-          .nav-link:hover{
-            font-weight: 900;
-            color: white!important;
-          }
-          .how-to-phone {
-            width: 70%;
+          .prev-how, .next-how {
+            cursor: pointer;
+            position: absolute;
+            top: 55%;
+            width: auto;
+            padding: 10px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
            
           }
-          .test{
-            display: flex;
+          
+          .site-headline {
+            font-size: 2rem;
+            padding: 20px;
+          }
+          .faster-headline{
+            font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
+            padding-top: 20px;
+          }
+      
+          .site-tagline {
+            font-size: 1rem;
+            color: black;
+            font-weight: 500;
+            padding-top: 30px;
+          }
+          
+          .logo-section-container{
+            padding-top: 50px;
+            padding-left: 30px;
+          }
+          .logo-icon-k{
+            height: 20%;
+            width: 20%;
+            padding-top: 10px;
+          }
+          .logo-icon-kidlat{
+            height: 80%;
+            width: 50%;
+            padding-top: 10px;
+            padding-left: 20px;
+          }
+          .img-area-1{
+            height: 150px;
+            width:35vh;
+          }
+          .img-area-2{
+            margin-right: 10px;
+            height: 150px;
+            width:37vh;
+          }
+          .next-how {
+            margin-left: 100px;
+            border-radius: 3px 0 0 3px;
+          }
+          .prev-how {
+            margin-left: -130px;
+            border-radius: 3px 0 0 3px;
           }
          
+          
+          .f3{
+            display: inline;
+          }
+  
+          .f23{
+            display: inline;
+          }
+  
+          .last-2{
+            display: inline;
+          }
+          .last-2 .card-body{
+            width: 50%;
+          }
+        }
+
+
+        @media screen and (device-width: 320px) and (device-height: 480px) 
+        and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+          .hero-section .container{
+            display: inline;
+            
+          }
+          .how-to-phone{
+            width: 60%;
+          }
+          .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 50%;
+        }
+          .faq {
+            height: 80px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .ans {
+            height: 120px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .prev-how, .next-how {
+            cursor: pointer;
+            position: absolute;
+            top: 70%;
+            width: auto;
+            padding: 10px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          
+          }
+          
+          .site-headline {
+            font-size: 2rem;
+            padding: 20px;
+          }
+          .faster-headline{
+            font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
+            padding-top: 20px;
+          }
+      
+          .site-tagline {
+            font-size: 1rem;
+            color: black;
+            font-weight: 500;
+            padding-top: 30px;
+          }
+          
+          .logo-section-container{
+            padding-top: 50px;
+            padding-left: 30px;
+          }
+          .logo-icon-k{
+            height: 20%;
+            width: 20%;
+            padding-top: 10px;
+          }
+          .logo-icon-kidlat{
+            height: 80%;
+            width: 50%;
+            padding-top: 10px;
+            padding-left: 20px;
+          }
+          .img-area-1{
+            height: 150px;
+            width:27vh;
+          }
+          .img-area-2{
+            height: 150px;
+            width:30vh;
+          }
+          .next-how {
+            margin-left: 90px;
+            border-radius: 3px 0 0 3px;
+          }
+          .prev-how {
+            margin-left: -120px;
+            border-radius: 3px 0 0 3px;
+          }
+          .f3{
+            display: inline;
+          }
+  
+          .f23{
+            display: inline;
+          }
+  
+          .last-2{
+            display: inline;
+          }
+          .last-2 .card-body{
+            width: 50%;
+          }
+         
+        }
+       
+      
+        @media screen and (device-width: 320px) and (device-height: 480px) 
+        and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+          .hero-section .container{
+            display: inline;
+            
+          }
+          .how-to-phone{
+            width: 60%;
+          }
+          .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 50%;
+        }
+          .faq {
+            height: 80px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .ans {
+            height: 120px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .prev-how, .next-how {
+            cursor: pointer;
+            position: absolute;
+            top: 70%;
+            width: auto;
+            padding: 10px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          
+          }
+          
+          .site-headline {
+            font-size: 2rem;
+            padding: 20px;
+          }
+          .faster-headline{
+            font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
+            padding-top: 20px;
+          }
+      
+          .site-tagline {
+            font-size: 1rem;
+            color: black;
+            font-weight: 500;
+            padding-top: 30px;
+          }
+          
+          .logo-section-container{
+            padding-top: 50px;
+            padding-left: 30px;
+          }
+          .logo-icon-k{
+            height: 20%;
+            width: 20%;
+            padding-top: 10px;
+          }
+          .logo-icon-kidlat{
+            height: 80%;
+            width: 50%;
+            padding-top: 10px;
+            padding-left: 20px;
+          }
+          .img-area-1{
+            height: 150px;
+            width:27vh;
+          }
+          .img-area-2{
+            height: 150px;
+            width:30vh;
+          }
+          .next-how {
+            margin-left: 90px;
+            border-radius: 3px 0 0 3px;
+          }
+          .prev-how {
+            margin-left: -120px;
+            border-radius: 3px 0 0 3px;
+          }
+          .f3{
+            display: inline;
+          }
+  
+          .f23{
+            display: inline;
+          }
+  
+          .last-2{
+            display: inline;
+          }
+          .last-2 .card-body{
+            width: 50%;
+          }
+         
+        }
+       
+      
+        @media only screen 
+        and (min-device-width: 360px) 
+        and (max-device-width: 640px)  {
+          .hero-section .container{
+            display: inline;
+            
+          }
+          .how-to-phone{
+            width: 60%;
+          }
+          .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 50%;
+        }
+          .faq {
+            height: 80px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .ans {
+            height: 120px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .prev-how, .next-how {
+            cursor: pointer;
+            position: absolute;
+            top: 60%;
+            width: auto;
+            padding: 10px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            
+          
+          }
+          
+          .site-headline {
+            font-size: 2rem;
+            padding: 20px;
+          }
+          .faster-headline{
+            font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
+            padding-top: 20px;
+          }
+      
+          .site-tagline {
+            font-size: 1rem;
+            color: black;
+            font-weight: 500;
+            padding-top: 30px;
+          }
+          
+          .logo-section-container{
+            padding-top: 50px;
+            padding-left: 30px;
+          }
+          .logo-icon-k{
+            height: 20%;
+            width: 20%;
+            padding-top: 10px;
+          }
+          .logo-icon-kidlat{
+            height: 80%;
+            width: 50%;
+            padding-top: 10px;
+            padding-left: 20px;
+          }
+          .img-area-1{
+            height: 150px;
+            width:27vh;
+          }
+          .img-area-2{
+            height: 150px;
+            width:30vh;
+          }
+          .next-how {
+            margin-left: 90px;
+            border-radius: 3px 0 0 3px;
+          }
+          .prev-how {
+            margin-left: -120px;
+            border-radius: 3px 0 0 3px;
+          }
+          .f3{
+            display: inline;
+          }
+  
+          .f23{
+            display: inline;
+          }
+  
+          .last-2{
+            display: inline;
+          }
+          .last-2 .card-body{
+            width: 50%;
+          }
+         
+        }
+
+        @media only screen 
+        and (min-device-width: 640px) 
+        and (max-device-width: 360px)  {
+          .hero-section .container{
+            display: inline;
+            
+          }
+          .how-to-phone{
+            width: 60%;
+          }
+          .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 50%;
+        }
+          .faq {
+            height: 80px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .ans {
+            height: 120px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .prev-how, .next-how {
+            cursor: pointer;
+            position: absolute;
+            top: 60%;
+            width: auto;
+            padding: 10px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            
+          
+          }
+          
+          .site-headline {
+            font-size: 2rem;
+            padding: 20px;
+          }
+          .faster-headline{
+            font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
+            padding-top: 20px;
+          }
+      
+          .site-tagline {
+            font-size: 1rem;
+            color: black;
+            font-weight: 500;
+            padding-top: 30px;
+          }
+          
+          .logo-section-container{
+            padding-top: 50px;
+            padding-left: 30px;
+          }
+          .logo-icon-k{
+            height: 20%;
+            width: 20%;
+            padding-top: 10px;
+          }
+          .logo-icon-kidlat{
+            height: 80%;
+            width: 50%;
+            padding-top: 10px;
+            padding-left: 20px;
+          }
+          .img-area-1{
+            height: 150px;
+            width:27vh;
+          }
+          .img-area-2{
+            height: 150px;
+            width:30vh;
+          }
+          .next-how {
+            margin-left: 90px;
+            border-radius: 3px 0 0 3px;
+          }
+          .prev-how {
+            margin-left: -120px;
+            border-radius: 3px 0 0 3px;
+          }
+          .f3{
+            display: inline;
+          }
+  
+          .f23{
+            display: inline;
+          }
+  
+          .last-2{
+            display: inline;
+          }
+          .last-2 .card-body{
+            width: 50%;
+          }
+         
+        }
+        @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 568px)  {
+          .hero-section .container{
+            display: inline;
+            
+          }
+          .how-to-phone{
+            width: 60%;
+          }
+          .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 50%;
+        }
+          .faq {
+            height: 80px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .ans {
+            height: 120px;
+            width: 100%;
+            background: #efce3d;
+            background-image: linear-gradient(#fddb3a, #fff48f);
+          }
+  
+          .prev-how, .next-how {
+            cursor: pointer;
+            position: absolute;
+            top: 60%;
+            width: auto;
+            padding: 10px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+           
+          
+          }
+          
+          .site-headline {
+            font-size: 2rem;
+            padding: 20px;
+          }
+          .faster-headline{
+            font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
+            padding-top: 20px;
+          }
+      
+          .site-tagline {
+            font-size: 1rem;
+            color: black;
+            font-weight: 500;
+            padding-top: 30px;
+          }
+          
+          .logo-section-container{
+            padding-top: 50px;
+            padding-left: 30px;
+          }
+          .logo-icon-k{
+            height: 20%;
+            width: 20%;
+            padding-top: 10px;
+          }
+          .logo-icon-kidlat{
+            height: 80%;
+            width: 50%;
+            padding-top: 10px;
+            padding-left: 20px;
+          }
+          .img-area-1{
+            height: 150px;
+            width:27vh;
+          }
+          .img-area-2{
+            height: 150px;
+            width:30vh;
+          }
+          .next-how {
+            margin-left: 90px;
+            border-radius: 3px 0 0 3px;
+          }
+          .prev-how {
+            margin-left: -120px;
+            border-radius: 3px 0 0 3px;
+          }
+          .f3{
+            display: inline;
+          }
+  
+          .f23{
+            display: inline;
+          }
+  
+          .last-2{
+            display: inline;
+          }
+          .last-2 .card-body{
+            width: 50%;
+          }
+         
+        }
+       
+        @media only screen 
+        and (min-device-width: 800px) 
+        and (max-device-width: 1280px)  {
+         
+          .how-to-phone {
+            width: 70%;
+          }
           .hero-section .container{
             display: flex;
-            
             
           }
           .card-body {
@@ -10203,36 +10503,27 @@
             padding: 1.25rem;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             transition: 0.3s;
-            width: 93%;
+            width: 100%;
         }
-        .ans-rates {
-          height: 220px;
-          width: 100%;
-          background: #efce3d;
-          background-image: linear-gradient(#fddb3a, #fff48f);
-          
-          
-        }
-        .list-rates li{
-          color: black;
-          margin-left: 190px;
-         }
-      
         
           .prev-how, .next-how {
             cursor: pointer;
-            position: static;
-            margin-top: 300px;
+            position: absolute;
+            top: 30%;
             width: auto;
             padding: 10px;
+            margin-top: -22px;
             color: white;
             font-weight: bold;
             font-size: 18px;
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             user-select: none;
-            
-
+          }
+          .row-content {
+            display: flex;
+            flex-flow: nowrap;
+            flex-direction: column;
           }
           .site-headline {
             font-size: 2rem;
@@ -10249,35 +10540,147 @@
           }
           .logo-icon-k {
             height: 20%;
-            width: 13%;
+            width: 20%;
             padding-top: 10px;
-            margin-left: 200px;
           }
           .logo-icon-kidlat {
-            height: 30%;
-            width: 40%;
+            height: 80%;
+            width: 50%;
             padding-top: 10px;
             padding-left: 20px;
           }
           .img-area-1 {
-            height:20%;
-            width: 40%;
-           
+            height: 200px;
+            width: 45vh;
           }
           .img-area-2 {
-            height: 20%;
-            width: 40%;
+            padding-left: 15px;
+            height: 200px;
+            width: 47vh;
           }
           .next-how {
-            margin-left: 5px;
+            margin-left: 220px;
             border-radius: 3px 0 0 3px;
           }
           .prev-how {
-            margin-left: 5px;
+            margin-left: 0px;
             border-radius: 3px 0 0 3px;
           }
-          .last-2 .card-body{
+          
+       
+     
+        }
+       
+
+        @media only screen 
+        and (min-device-width: 540px) 
+        and (max-device-width: 960px) 
+         {
+          .prev-how, .next-how {
+            background-color: red;
+          }
+         
+         }
+
+
+        
+        @media only screen 
+        and (min-device-width: 768px) 
+        and (max-device-width: 1024px)  {
+          .how-to-phone {
             width: 70%;
           }
-          
+          .hero-section .container{
+            display: flex;
+            
+          }
+          .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 100%;
         }
+        
+          .prev-how, .next-how {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 10px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          }
+          .row-content {
+            display: flex;
+            flex-flow: nowrap;
+            flex-direction: column;
+          }
+          .site-headline {
+            font-size: 2rem;
+          }
+          .site-tagline {
+            font-size: 1rem;
+            color: black;
+            font-weight: 500;
+            padding-top: 30px;
+          }
+          .logo-section-container {
+            padding-top: 50px;
+            padding-left: 30px;
+          }
+          .logo-icon-k {
+            height: 20%;
+            width: 20%;
+            padding-top: 10px;
+          }
+          .logo-icon-kidlat {
+            height: 80%;
+            width: 50%;
+            padding-top: 10px;
+            padding-left: 20px;
+          }
+          .img-area-1 {
+            height: 200px;
+            width: 45vh;
+          }
+          .img-area-2 {
+            padding-left: 15px;
+            height: 200px;
+            width: 47vh;
+          }
+          .next-how {
+            margin-left: 220px;
+            border-radius: 3px 0 0 3px;
+          }
+          .prev-how {
+            margin-left: 0px;
+            border-radius: 3px 0 0 3px;
+            
+          }
+          
+          .f3{
+            display: flex;
+          }
+  
+          .f23{
+            display: flex;
+          }
+  
+          .last-2{
+            display: flex;
+          }
+          .last-2 .card-body{
+            width: 50%;
+          }
+          
+       
+     
+        }
+       
