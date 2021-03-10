@@ -383,6 +383,16 @@
   <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
   <script type="text/javascript">
     $(function () {
+      var params = new URLSearchParams(window.location.search)
+      var inviteCode = params.get('inviteCode');
+      document.getElementById("inviteCode").value = inviteCode;
+      if (inviteCode == "") {
+        $(window).bind("pageshow", function () {
+          var form = $('#form-sign');
+          // let the browser natively reset defaults
+          form[0].reset();
+        });
+      }
       $("#status-regis-front").hide();
       $(".municipality").prop("disabled", true);
       $(".province").on("change", function (e) {
