@@ -71,7 +71,7 @@
     <div class="container">
       <div class="row row justify-content-end">
         <div class="col-md-6" style="padding: 30px;">
-          <img src="./franchiseAds.png" style="width: inherit" alt="operator" />
+          <img src="assets/images/franchise.png" style="width: inherit" alt="operator" />
         </div>
         <div class="col-md-6">
 
@@ -180,12 +180,18 @@
             <div class="col-sm-12 form-group">
               <input name="mobile" type="text" class="form-control p-number" placeholder="Phone Number"
                 maxlength="11" />
+
             </div>
+
             <div class="col-sm-12 form-group">
               <input name="email" type="email" class="form-control email" placeholder="Email Address" />
             </div>
             <div class="col-sm-12 form-group">
               <input name="proposedArea" type="text" class="form-control" placeholder="Proposed Area" />
+            </div>
+            <div class="col-sm-6 form-group">
+              <input name="operatorCode" class="form-control operatorCode" id="inviteCode"
+                placeholder="Operator Code Optional" />
             </div>
             <div class="col-sm-12 form-group">
               <label>Target No. of Riders to Operate</label>
@@ -511,31 +517,31 @@
 
       });
       $("form[name='sign-up-form']").validate({
-        // rules: {
-        //   firstname: "required",
-        //   lastname: "required",
-        //   mobile: "required",
-        //   address: "required",
-        //   numMerchant: "required",
-        //   numRider: "required",
-        //   validId: "required",
-        //   proposedArea: "required",
-        //   email: {
-        //     required: true,
-        //     email: true,
-        //   },
-        // },
+        rules: {
+          firstname: "required",
+          lastname: "required",
+          mobile: "required",
+          address: "required",
+          numMerchant: "required",
+          numRider: "required",
+          validId: "required",
+          proposedArea: "required",
+          email: {
+            required: true,
+            email: true,
+          },
+        },
         // Specify validation error messages
-        // messages: {
-        //   firstname: "This field is required",
-        //   lastname: "This field is required",
-        //   numRider: "This field is required",
-        //   numMerchant: "This field is required",
-        //   proposedArea: "This field is required.",
-        //   validId: "This field is required",
-        //   mobile: "This field is required.",
-        //   email: "Please enter a valid email address",
-        // },
+        messages: {
+          firstname: "This field is required",
+          lastname: "This field is required",
+          numRider: "This field is required",
+          numMerchant: "This field is required",
+          proposedArea: "This field is required.",
+          validId: "This field is required",
+          mobile: "This field is required.",
+          email: "Please enter a valid email address",
+        },
         submitHandler: function (form) {
           //ajax fires here!
 
@@ -570,7 +576,7 @@
             alert("Please Select your Province");
           }
           else {
-           
+
 
             fetch('https://staging-api.kidlat.com.ph/rider/applicant/operator', {
               method: 'POST',
@@ -587,6 +593,7 @@
                   mobile: form.mobile.value,
                   proposedArea: form.proposedArea.value,
                   targetRiders: Number(form.numRider.value),
+                  referralCode: form.operatorCode.value,
                   targetMerchants: Number(form.numMerchant.value),
                   validId: returnRegisOwnerFront,
                   provinceId: Number(form.province.value),
@@ -606,10 +613,11 @@
                 return res.json();
 
               } else if (res.status === 400) {
-                alert("Your Mobile Number or Email is already Taken");
+                alert("Invalid referral Code");
                 return Promise.reject('error 400');
 
-              } else {
+              }
+              else {
                 return Promise.reject('some other error: ' + res.status);
 
               }
